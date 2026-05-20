@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>七原罪天堂</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="hero">
+  <div class="hero-img"></div>
+  <div class="hero-overlay"></div>
+  <div class="srv-pill">
+    <h3>SERVER STATUS</h3>
+    <div class="sr"><span class="sl">狀態</span><span class="sv"><span class="dot2"></span>運作中</span></div>
+    <div class="sr"><span class="sl">版本</span><span class="sy">3.81 經典平衡版</span></div>
+    <div class="sr"><span class="sl">經驗倍率</span><span class="sy">20 倍</span></div>
+    <div class="sr"><span class="sl">金幣掉寶</span><span class="sy">3 倍</span></div>
+    <div class="sr"><span class="sl">武防強化</span><span class="sy">1 倍</span></div>
+    <div class="sr"><span class="sl">智能內掛</span><span class="sv">24H 全自動</span></div>
+  </div>
+  <div class="hero-content">
+    <svg class="logo-emb" width="62" height="62" viewBox="0 0 62 62" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="31" cy="31" r="29" fill="none" stroke="#c89428" stroke-width="1.3" opacity=".65"/>
+      <circle cx="31" cy="31" r="22" fill="none" stroke="#c89428" stroke-width=".5" opacity=".35"/>
+      <polygon points="31,8 36,23 52,23 39,33 44,49 31,39 18,49 23,33 10,23 26,23" fill="none" stroke="#c89428" stroke-width="1.5"/>
+      <polygon points="31,14 35,26 48,26 38,34 41,46 31,39 21,46 24,34 14,26 27,26" fill="#c8942818"/>
+      <circle cx="31" cy="31" r="5" fill="#c89428" opacity=".75"/>
+    </svg>
+    <div class="logo-title">七原罪天堂</div>
+    <div class="logo-en">Lineage · 一個會進化的全新世界</div>
+    <div class="logo-div"></div>
+    <div class="logo-slogan">「我們不玩快閃，我們只做經典。」</div>
+    <div class="logo-tag">長期定居首選 · 農夫也能變王者</div>
+    <div class="btns">
+      <a href="https://reurl.cc/gn9Z94" target="_blank" class="btn btn-r">▶ 加入玩家社群</a>
+      <a href="https://line.me/ti/p/~@263nnjlu" target="_blank" class="btn btn-b">💬 官方 LINE 客服</a>
+    </div>
+  </div>
+</div>
+
+<div class="topbar">
+  <span style="color:#182838;white-space:nowrap">⚜ 七原罪天堂</span>
+  <div class="tmq"><span>🚀 長期定居首選！農夫也能變王者！&nbsp;&nbsp;⚔ 攻城戰每週開放！&nbsp;&nbsp;🎁 新手入坑立即領取「全套基本安定裝」！&nbsp;&nbsp;📣 官方 LINE：@263nnjlu</span></div>
+  <span style="white-space:nowrap;color:#182838">版本：<b style="color:#ffcc44">3.81</b></span>
+</div>
+
+<nav><ul>
+  <li><a href="#" class="act" onclick="showPage('home');return false">首頁</a></li>
+  <li><a href="#" onclick="showPage('news');return false">最新公告</a></li>
+  <li><a href="#" onclick="showPage('classes');return false">職業介紹</a></li>
+  <li><a href="#" onclick="showPage('boss');return false">BOSS卡資料庫</a></li>
+  <li><a href="#" onclick="showPage('items');return false">道具資料庫</a></li>
+  <li><a href="#" onclick="showPage('guide');return false">攻略指南</a></li>
+  <li><a href="#" onclick="showPage('rank');return false">排行榜</a></li>
+  <li><a href="https://reurl.cc/gn9Z94" target="_blank">玩家社群</a></li>
+  <li><a href="https://line.me/ti/p/~@263nnjlu" target="_blank">客服中心</a></li>
+</ul></nav>
+
+<div class="ticker">
+  <span class="tick-tag">◆ 最新消息</span>
+  <div class="tick-in"><span class="tick-txt">🚀 七原罪天堂：一個會進化的全新世界！&nbsp;&nbsp;🎁 新手入坑立即領取「全套基本安定裝」！&nbsp;&nbsp;⚔ GM 親自研發核心，拒絕複製貼上！&nbsp;&nbsp;✅ 無濫員、GM 不干預遊戲！&nbsp;&nbsp;📣 加入玩家社群：https://reurl.cc/gn9Z94</span></div>
+</div>
+
+<div class="wrap">
+  <aside>
+    <div class="pnl">
+      <div class="pnl-h"><h2>快速連結</h2></div>
+      <div class="pnl-b" style="padding:7px">
+        <a href="https://reurl.cc/gn9Z94" target="_blank" class="dl-btn dl-r">▶ 加入玩家社群</a>
+        <a href="https://line.me/ti/p/~@263nnjlu" target="_blank" class="dl-btn dl-b">💬 LINE @263nnjlu</a>
+        <a href="#" class="dl-btn dl-g">▼ 下載遊戲主程式</a>
+        <div style="color:#1a2c3a;font-size:11px;margin-top:5px;line-height:1.7">版本：3.81 經典平衡版<br>智能內掛：24H 全自動<br>武防強化：1倍（保值）</div>
+      </div>
+    </div>
+    <div class="pnl">
+      <div class="pnl-h"><h2>快速選單</h2></div>
+      <div class="pnl-b" style="padding:3px 0">
+        <ul class="smenu">
+          <li><a onclick="showPage('home');return false">遊戲介紹</a></li>
+          <li><a onclick="showPage('newbie');return false">新手指導教學</a></li>
+          <li><a onclick="showPage('equip');return false">道具資料庫</a></li>
+          <li><a onclick="showPage('items');return false">裝備資料庫</a></li>
+          <li><a onclick="showPage('weapon');return false">武器資料庫</a></li>
+          <li><a onclick="showPage('skill');return false">金技資料庫</a></li>
+          <li><a onclick="showPage('boss');return false">BOSS卡資料庫</a></li>
+          <li><a onclick="showPage('mapbadge');return false">地圖徽章資料庫</a></li>
+          <li><a onclick="showPage('material');return false">材料收集資料庫</a></li>
+          <li><a onclick="showPage('color');return false">炫色資料庫</a></li>
+          <li><a onclick="showPage('bonus');return false">加成資料庫</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pnl">
+      <div class="pnl-h"><h2>聯絡我們</h2></div>
+      <div class="pnl-b" style="padding:3px 0">
+        <ul class="smenu">
+          <li><a href="https://reurl.cc/gn9Z94" target="_blank">💬 玩家交流社群</a></li>
+          <li><a href="https://line.me/ti/p/~@263nnjlu" target="_blank">📣 LINE @263nnjlu</a></li>
+        </ul>
+      </div>
+    </div>
+  </aside>
+
+  <main>
+
+    <!-- HOME -->
+    <div id="page-home">
+      <div class="pnl">
+        <div class="pnl-h"><h2>⚙ 伺服器核心設定｜農夫也能變王者</h2></div>
+        <div class="pnl-b" style="padding:7px">
+          <table class="itbl">
+            <tr><td>遊戲版本</td><td><span class="gy">3.81 經典平衡版</span></td></tr>
+            <tr><td>經驗倍率</td><td><span class="gy">20 倍</span> <span style="color:#3a5068">（等級提升超有感）</span></td></tr>
+            <tr><td>金幣掉寶</td><td><span class="gy">3 倍</span> <span style="color:#3a5068">（物寶豐沛好起家）</span></td></tr>
+            <tr><td>武防強化</td><td><span class="gy">1 倍</span> <span style="color:#3a5068">（裝備價值絕對保值）</span></td></tr>
+            <tr><td>智能內掛</td><td><span class="gg">24H 全自動</span> <span style="color:#3a5068">（上班睡覺都在強）</span></td></tr>
+            <tr><td>伺服器特色</td><td><span style="color:#c8a848">GM 親自研發核心，拒絕複製貼上</span></td></tr>
+            <tr><td>玩家社群</td><td><a href="https://reurl.cc/gn9Z94" target="_blank">https://reurl.cc/gn9Z94</a></td></tr>
+            <tr><td>官方客服</td><td><a href="https://line.me/ti/p/~@263nnjlu" target="_blank">LINE：@263nnjlu</a></td></tr>
+          </table>
+        </div>
+      </div>
+      <div class="pnl">
+        <div class="pnl-h"><h2>🚫 我們堅持的純淨原則</h2></div>
+        <div class="pnl-b">
+          <div class="principle-grid">
+            <div class="p-item bad"><span class="pi">✖</span><div><b style="color:#cc6666">無濫員、無親友圈</b><br>營造最公平的競爭環境</div></div>
+            <div class="p-item bad"><span class="pi">✖</span><div><b style="color:#cc6666">GM 不干預遊戲</b><br>不參與門爭，只體議、做更新</div></div>
+            <div class="p-item good"><span class="pi">✔</span><div><b style="color:#44cc66">農夫天堂</b><br>裝備全靠打，技術與時間才是關鍵！</div></div>
+            <div class="p-item good"><span class="pi">✔</span><div><b style="color:#44cc66">耐玩設計</b><br>為「耐玩」而誕生，邀你來當亞丁的主人</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="pnl">
+        <div class="pnl-h"><h2>🎁 新手入坑限定福利</h2></div>
+        <div class="pnl-b">
+          <div class="welfare-box">
+            <h3>✦ 立即領取「全套基本安定裝」✦</h3>
+            <p>現在加入，即可領取<span class="welfare-highlight">「全套基本安定裝」</span>！<br>讓您過多無負擔，開局直接進入戰鬥狀態，<span class="welfare-highlight">無痛開農！</span></p>
+          </div>
+          <div class="contact-grid" style="margin-top:8px">
+            <div class="contact-item"><div class="ct">💬 玩家交流社群</div><a href="https://reurl.cc/gn9Z94" target="_blank">https://reurl.cc/gn9Z94</a></div>
+            <div class="contact-item"><div class="ct">📣 官方 LINE 客服</div><a href="https://line.me/ti/p/~@263nnjlu" target="_blank">@263nnjlu</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- NEWS -->
+    <div id="page-news" style="display:none">
+      <div class="pnl">
+        <div class="pnl-h"><h2>最新公告</h2></div>
+        <div class="pnl-b" style="padding:5px">
+          <table class="tbl">
+            <thead><tr><th style="width:52px">類型</th><th>公告標題</th><th class="dc" style="width:86px">日期</th><th class="nc" style="width:42px">閱讀</th></tr></thead>
+            <tbody>
+              <tr><td><span class="tag tn">NEW</span></td><td><a href="#">【福利】新手入坑立即領「全套基本安定裝」！</a></td><td class="dc">2025/12/20</td><td class="nc">4,521</td></tr>
+              <tr><td><span class="tag th">HOT</span></td><td><a href="#">【特色】GM 親自研發核心上線，全新遊戲體驗！</a></td><td class="dc">2025/12/18</td><td class="nc">3,288</td></tr>
+              <tr><td><span class="tag te">活動</span></td><td><a href="#">【公告】3.81 經典平衡版正式開服！歡迎加入！</a></td><td class="dc">2025/12/15</td><td class="nc">6,102</td></tr>
+              <tr><td><span class="tag ti">公告</span></td><td><a href="#">【規範】無濫員、GM 不干預遊戲聲明公告</a></td><td class="dc">2025/12/10</td><td class="nc">2,877</td></tr>
+              <tr><td><span class="tag te">活動</span></td><td><a href="#">【攻城戰】本週攻城戰結果公告</a></td><td class="dc">2025/12/06</td><td class="nc">5,330</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- CLASSES -->
+    <div id="page-classes" style="display:none">
+      <div class="pnl">
+        <div class="pnl-h"><h2>官方七大職業</h2></div>
+        <div class="pnl-b">
+          <div class="cgrid">
+            <div class="cc"><div class="cc-inner"><div class="cc-ico">👑</div><h3>君主</h3><div class="cc-role">Prince / Princess</div><span class="cc-type">領袖 · 血盟</span><p class="cc-desc">血盟核心，以魅力召喚盟員。可學低階魔法，後期以魅力或力量為主。</p></div></div>
+            <div class="cc"><div class="cc-inner"><div class="cc-ico">⚔️</div><h3>騎士</h3><div class="cc-role">Knight</div><span class="cc-type">近戰 · 坦克</span><p class="cc-desc">最強防禦職業，持劍盾作戰。50級可學衝擊之暈，城戰必備肉盾。</p></div></div>
+            <div class="cc"><div class="cc-inner"><div class="cc-ico">🏹</div><h3>妖精</h3><div class="cc-role">Elf</div><span class="cc-type">遠程 · 輸出</span><p class="cc-desc">弓箭遠程輸出，擁有精靈魔法。弓妖賺錢是天堂入門的經典玩法。</p></div></div>
+            <div class="cc"><div class="cc-inner"><div class="cc-ico">🔮</div><h3>法師</h3><div class="cc-role">Wizard</div><span class="cc-type">魔法 · 群攻</span><p class="cc-desc">最強魔法職業，可學至10階法術。流星雨、起死回生是城戰主力。</p></div></div>
+            <div class="cc"><div class="cc-inner"><div class="cc-ico">🌑</div><h3>黑暗妖精</h3><div class="cc-role">Dark Elf</div><span class="cc-type">近戰 · 暗殺</span><p class="cc-desc">雙刀近戰，暗閃迴避。城戰最令人聞風喪膽的近戰打手職業。</p></div></div>
+            <div class="cc"><div class="cc-inner"><div class="cc-ico">🐉</div><h3>龍騎士</h3><div class="cc-role">Dragon Knight</div><span class="cc-type">近戰 · 變身</span><p class="cc-desc">可變身龍形態，完成普洛凱爾課題成長，後期強力戰鬥職業。</p></div></div>
+            <div class="cc"><div class="cc-inner"><div class="cc-ico">✨</div><h3>幻術師</h3><div class="cc-role">Illusionist</div><span class="cc-type">魔法 · 召喚</span><p class="cc-desc">奇古獸召喚與鏡像分身。智力幻術後期極具個性與爆發力。</p></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BOSS CARDS -->
+    <div id="page-boss" style="display:none">
+      <div class="pnl">
+        <div class="pnl-h"><h2>👑 BOSS卡資料庫</h2></div>
+        <div class="pnl-b">
+          <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px">
+            <button onclick="filterCards('all')" class="cf-btn act" id="btn-all">全部</button>
+            <button onclick="filterCards('melee')" class="cf-btn" id="btn-melee">近戰系</button>
+            <button onclick="filterCards('magic')" class="cf-btn" id="btn-magic">魔法系</button>
+            <button onclick="filterCards('range')" class="cf-btn" id="btn-range">遠程系</button>
+            <button onclick="filterCards('tank')" class="cf-btn" id="btn-tank">防禦系</button>
+          </div>
+          <div class="boss-grid" id="bossGrid">
+            <div class="bc" data-type="tank" data-img="王卡/古代守護者卡片.jpg" data-name="古代守護者" data-en="Ancient Guardian Card" data-ability="🛡️ 鋼鐵防護傷害減少 30%" data-stats="❤️ HP+5000|🛡️ 魔法防禦+20|⬇️ 減少傷害+5"><div class="bc-img"><img src="王卡/古代守護者卡片.jpg" alt="古代守護者" loading="lazy"></div><div class="bc-body"><div class="bc-top"><span class="bc-rare legendary">傳說</span><span class="bc-no">#001</span></div><h3 class="bc-name">古代守護者</h3><div class="bc-en">Ancient Guardian Card</div><div class="bc-divider"></div><div class="bc-ab-title">⚡ 特殊能力</div><div class="bc-ab-desc">🛡️ 鋼鐵防護傷害減少 <b>30%</b></div><div class="bc-stats"><span class="bs">❤️ HP+5000</span><span class="bs">🛡️ 魔法防禦+20</span><span class="bs">⬇️ 減少傷害+5</span></div></div></div>
+            <div class="bc" data-type="melee" data-img="王卡/火龍-巴拉卡斯卡片.jpg" data-name="火龍-巴拉卡斯" data-en="Fire Dragon - Valacas" data-ability="🔥 烈炎劍術傷害 x2、爆擊 x2" data-stats="⚔️ 近距離+5|✨ 魔法命中+5|🔮 魔功+5"><div class="bc-img"><img src="王卡/火龍-巴拉卡斯卡片.jpg" alt="火龍-巴拉卡斯" loading="lazy"></div><div class="bc-body"><div class="bc-top"><span class="bc-rare legendary">傳說</span><span class="bc-no">#002</span></div><h3 class="bc-name">火龍-巴拉卡斯</h3><div class="bc-en">Fire Dragon - Valacas</div><div class="bc-divider"></div><div class="bc-ab-title">⚡ 特殊能力</div><div class="bc-ab-desc">🔥 烈炎劍術傷害 <b>×2</b>、爆擊 <b>×2</b></div><div class="bc-stats"><span class="bs">⚔️ 近距離+5</span><span class="bs">✨ 魔法命中+5</span><span class="bs">🔮 魔功+5</span></div></div></div>
+            <div class="bc" data-type="magic" data-img="王卡/水龍-法利昂卡片.jpg" data-name="水龍-法利昂" data-en="Water Dragon - Fariong" data-ability="☄️ 流星雨傷害增加 5倍" data-stats="⚔️ 近距離+5|✨ 魔法命中+5|🔮 魔功+5"><div class="bc-img"><img src="王卡/水龍-法利昂卡片.jpg" alt="水龍-法利昂" loading="lazy"></div><div class="bc-body"><div class="bc-top"><span class="bc-rare legendary">傳說</span><span class="bc-no">#003</span></div><h3 class="bc-name">水龍-法利昂</h3><div class="bc-en">Water Dragon - Fariong</div><div class="bc-divider"></div><div class="bc-ab-title">⚡ 特殊能力</div><div class="bc-ab-desc">☄️ 流星雨傷害增加 <b>5倍</b></div><div class="bc-stats"><span class="bs">⚔️ 近距離+5</span><span class="bs">✨ 魔法命中+5</span><span class="bs">🔮 魔功+5</span></div></div></div>
+            <div class="bc" data-type="melee" data-img="王卡/吉爾塔斯卡片.jpg" data-name="吉爾塔斯" data-en="Giltas" data-ability="⚡ 反擊屏障傷害增加 50%" data-stats="⚔️ 近距離+5|⬇️ 減少傷害+5|🔮 魔功+5|💜 魔力傷害+5"><div class="bc-img"><img src="王卡/吉爾塔斯卡片.jpg" alt="吉爾塔斯" loading="lazy"></div><div class="bc-body"><div class="bc-top"><span class="bc-rare legendary">傳說</span><span class="bc-no">#004</span></div><h3 class="bc-name">吉爾塔斯</h3><div class="bc-en">Giltas</div><div class="bc-divider"></div><div class="bc-ab-title">⚡ 特殊能力</div><div class="bc-ab-desc">⚡ 反擊屏障傷害增加 <b>50%</b></div><div class="bc-stats"><span class="bs">⚔️ 近距離+5</span><span class="bs">⬇️ 減少傷害+5</span><span class="bs">🔮 魔功+5</span><span class="bs">💜 魔力傷害+5</span></div></div></div>
+            <div class="bc" data-type="melee" data-img="王卡/地龍-安塔瑞斯卡片.jpg" data-name="地龍-安塔瑞斯" data-en="Earth Dragon - Antharas" data-ability="🗡️ 屠宰者傷害增加 3倍" data-stats="⚔️ 近距離+5|⬇️ 減少傷害+5|🔮 魔功+5"><div class="bc-img"><img src="王卡/地龍-安塔瑞斯卡片.jpg" alt="地龍-安塔瑞斯" loading="lazy"></div><div class="bc-body"><div class="bc-top"><span class="bc-rare legendary">傳說</span><span class="bc-no">#005</span></div><h3 class="bc-name">地龍-安塔瑞斯</h3><div class="bc-en">Earth Dragon - Antharas</div><div class="bc-divider"></div><div class="bc-ab-title">⚡ 特殊能力</div><div class="bc-ab-desc">🗡️ 屠宰者傷害增加 <b>3倍</b></div><div class="bc-stats"><span class="bs">⚔️ 近距離+5</span><span class="bs">⬇️ 減少傷害+5</span><span class="bs">🔮 魔功+5</span></div></div></div>
+            <div class="bc" data-type="melee" data-img="王卡/死亡騎士卡片.jpg" data-name="死亡騎士" data-en="Death Knight Card" data-ability="⚔️ 勇猛意志傷害增加 1.5倍" data-stats="⚔️ 近距離+2|⬇️ 減少傷害+5|🔮 魔功+2"><div class="bc-img"><img src="王卡/死亡騎士卡片.jpg" alt="死亡騎士" loading="lazy"></div><div class="bc-body"><div class="bc-top"><span class="bc-rare legendary">傳說</span><span class="bc-no">#006</span></div><h3 class="bc-name">死亡騎士</h3><div class="bc-en">Death Knight Card</div><div class="bc-divider"></div><div class="bc-ab-title">⚡ 特殊能力</div><div class="bc-ab-desc">⚔️ 勇猛意志傷害增加 <b>1.5倍</b></div><div class="bc-stats"><span class="bs">⚔️ 近距離+2</span><span class="bs">⬇️ 減少傷害+5</span><span class="bs">🔮 魔功+2</span></div></div></div>
+            <div class="bc" data-type="melee" data-img="王卡/幽冥肯特城主卡片.jpg" data-name="幽冥肯特城主" data-en="Lord Kent's Skeleton Card" data-ability="💀 勇猛意志傷害 +300%（x3）" data-stats="⚔️ 近距離+5|⬇️ 減少傷害+10|🔮 魔功+5"><div class="bc-img"><img src="王卡/幽冥肯特城主卡片.jpg" alt="幽冥肯特城主" loading="lazy"></div><div class="bc-body"><div class="bc-top"><span class="bc-rare legendary">傳說</span><span class="bc-no">#007</span></div><h3 class="bc-name">幽冥肯特城主</h3><div class="bc-en">Lord Kent's Skeleton Card</div><div class="bc-divider"></div><div class="bc-ab-title">⚡ 特殊能力</div><div class="bc-ab-desc">💀 勇猛意志傷害 <b>+300%</b>（×3）</div><div class="bc-stats"><span class="bs">⚔️ 近距離+5</span><span class="bs">⬇️ 減少傷害+10</span><span class="bs">🔮 魔功+5</span></div></div></div>
+            <div class="bc" data-type="range" data-img="王卡/風龍-林德拜爾卡片.jpg" data-name="風龍-林德拜爾" data-en="Wind Dragon - Lindvior" data-ability="🏹 三重矢傷害增加 3倍" data-stats="🏹 遠距離+5|✨ 魔法命中+5|🔮 魔功+5"><div class="bc-img"><img src="王卡/風龍-林德拜爾卡片.jpg" alt="風龍-林德拜爾" loading="lazy"></div><div class="bc-body"><div class="bc-top"><span class="bc-rare legendary">傳說</span><span class="bc-no">#008</span></div><h3 class="bc-name">風龍-林德拜爾</h3><div class="bc-en">Wind Dragon - Lindvior</div><div class="bc-divider"></div><div class="bc-ab-title">⚡ 特殊能力</div><div class="bc-ab-desc">🏹 三重矢傷害增加 <b>3倍</b></div><div class="bc-stats"><span class="bs">🏹 遠距離+5</span><span class="bs">✨ 魔法命中+5</span><span class="bs">🔮 魔功+5</span></div></div></div>
+            <div class="bc" data-type="melee" data-img="王卡/惡魔王卡片.jpg" data-name="惡魔王" data-en="Demon King Card" data-ability="😈 黑暗狂暴傷害 x2、爆擊率 x2" data-stats="⚔️ 近距離+5|⬇️ 減少傷害+5|🔮 魔功+5"><div class="bc-img"><img src="王卡/惡魔王卡片.jpg" alt="惡魔王" loading="lazy"></div><div class="bc-body"><div class="bc-top"><span class="bc-rare legendary">傳說</span><span class="bc-no">#009</span></div><h3 class="bc-name">惡魔王</h3><div class="bc-en">Demon King Card</div><div class="bc-divider"></div><div class="bc-ab-title">⚡ 特殊能力</div><div class="bc-ab-desc">😈 黑暗狂暴傷害 <b>×2</b>、爆擊率 <b>×2</b></div><div class="bc-stats"><span class="bs">⚔️ 近距離+5</span><span class="bs">⬇️ 減少傷害+5</span><span class="bs">🔮 魔功+5</span></div></div></div>
+            <div class="bc" data-type="melee" data-img="王卡/闇龍-哈爾巴斯卡片.jpg" data-name="闇龍-哈爾巴斯" data-en="Dark Dragon - Halbas Card" data-ability="🌑 雙重傷害 15% 機率觸發" data-stats="⚔️ 近距離+5|🏹 遠距離+5|🔮 魔功+5"><div class="bc-img"><img src="王卡/闇龍-哈爾巴斯卡片.jpg" alt="闇龍-哈爾巴斯" loading="lazy"></div><div class="bc-body"><div class="bc-top"><span class="bc-rare legendary">傳說</span><span class="bc-no">#010</span></div><h3 class="bc-name">闇龍-哈爾巴斯</h3><div class="bc-en">Dark Dragon - Halbas Card</div><div class="bc-divider"></div><div class="bc-ab-title">⚡ 特殊能力</div><div class="bc-ab-desc">🌑 雙重傷害 <b>15%</b> 機率觸發</div><div class="bc-stats"><span class="bs">⚔️ 近距離+5</span><span class="bs">🏹 遠距離+5</span><span class="bs">🔮 魔功+5</span></div></div></div>
+            <div class="bc" data-type="magic" data-img="王卡/鐮刀死神卡片.jpg" data-name="鐮刀死神" data-en="Scythe Grim Reaper Card" data-ability="💀 奇古獸傷害增加 3倍" data-stats="⚔️ 近距離+5|⬇️ 減少傷害+5|🔮 魔功+10|🧠 智力+10"><div class="bc-img"><img src="王卡/鐮刀死神卡片.jpg" alt="鐮刀死神" loading="lazy"></div><div class="bc-body"><div class="bc-top"><span class="bc-rare legendary">傳說</span><span class="bc-no">#011</span></div><h3 class="bc-name">鐮刀死神</h3><div class="bc-en">Scythe Grim Reaper Card</div><div class="bc-divider"></div><div class="bc-ab-title">⚡ 特殊能力</div><div class="bc-ab-desc">💀 奇古獸傷害增加 <b>3倍</b></div><div class="bc-stats"><span class="bs">⚔️ 近距離+5</span><span class="bs">⬇️ 減少傷害+5</span><span class="bs">🔮 魔功+10</span><span class="bs">🧠 智力+10</span></div></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ITEMS -->
+    <div id="page-items" style="display:none">
+      <div class="pnl">
+        <div class="pnl-h"><h2>裝備資料庫（精選）</h2></div>
+        <div class="pnl-b">
+          <div class="ig">
+            <div class="ic"><span class="ic-ico">⚔️</span><div class="ic-name">冥王之劍 +15</div><div class="ic-r rl">★★★ 傳說</div><div class="ic-stat">攻擊+520 · 暗屬</div></div>
+            <div class="ic"><span class="ic-ico">🗡️</span><div class="ic-name">瑟魯基之劍 +12</div><div class="ic-r rl">★★★ 傳說</div><div class="ic-stat">攻擊+490 · 騎士專</div></div>
+            <div class="ic"><span class="ic-ico">🏹</span><div class="ic-name">沙哈之弓 +10</div><div class="ic-r re">★★ 史詩</div><div class="ic-stat">攻擊+360 · 免帶箭</div></div>
+            <div class="ic"><span class="ic-ico">🗡️</span><div class="ic-name">紅影雙刀 +10</div><div class="ic-r re">★★ 史詩</div><div class="ic-stat">攻擊+340 · 黑妖專</div></div>
+            <div class="ic"><span class="ic-ico">🪄</span><div class="ic-name">冰晶法杖 +8</div><div class="ic-r re">★★ 史詩</div><div class="ic-stat">魔攻+310 · 冰屬</div></div>
+            <div class="ic"><span class="ic-ico">🛡️</span><div class="ic-name">龍王護甲 +12</div><div class="ic-r rl">★★★ 傳說</div><div class="ic-stat">防禦+440</div></div>
+            <div class="ic"><span class="ic-ico">👑</span><div class="ic-name">七原罪之冠</div><div class="ic-r rl">★★★ 傳說</div><div class="ic-stat">全屬+50 · 限定</div></div>
+            <div class="ic"><span class="ic-ico">💍</span><div class="ic-name">命運之戒 +8</div><div class="ic-r rr">★ 稀有</div><div class="ic-stat">暴擊+25%</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GUIDE -->
+    <div id="page-guide" style="display:none">
+      <div class="pnl">
+        <div class="pnl-h"><h2>攻略指南</h2></div>
+        <div class="pnl-b" style="padding:5px">
+          <table class="tbl">
+            <thead><tr><th style="width:52px">分類</th><th>攻略標題</th><th class="dc" style="width:86px">日期</th><th class="nc" style="width:42px">閱讀</th></tr></thead>
+            <tbody>
+              <tr><td><span class="tag ti">新手</span></td><td><a href="#">【新手入門】從角色創建到50級完整教學</a></td><td class="dc">2025/12/18</td><td class="nc">9,241</td></tr>
+              <tr><td><span class="tag te">職業</span></td><td><a href="#">【七大職業】詳細配點與技能加點建議</a></td><td class="dc">2025/12/15</td><td class="nc">7,633</td></tr>
+              <tr><td><span class="tag th">城戰</span></td><td><a href="#">【攻城戰】完整機制 · 陣型戰術 · 攻守心得</a></td><td class="dc">2025/12/10</td><td class="nc">6,088</td></tr>
+              <tr><td><span class="tag tn">裝備</span></td><td><a href="#">【傳說裝備】各大神器取得路線與掉落地點</a></td><td class="dc">2025/12/08</td><td class="nc">5,512</td></tr>
+              <tr><td><span class="tag te">賺錢</span></td><td><a href="#">【農幣攻略】弓妖路線 · 法師帶狗地圖推薦</a></td><td class="dc">2025/12/05</td><td class="nc">4,890</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- RANK -->
+    <div id="page-rank" style="display:none">
+      <div class="pnl">
+        <div class="pnl-h"><h2>本週排行榜</h2></div>
+        <div class="pnl-b" style="padding:5px">
+          <table class="tbl">
+            <thead><tr><th style="width:42px">名次</th><th>角色名稱</th><th>職業</th><th>血盟</th><th style="width:54px">等級</th></tr></thead>
+            <tbody>
+              <tr><td class="nc rk1">🥇 1</td><td><a href="#" class="rk1">滅世之主</a></td><td><span class="cbadge">騎士</span></td><td>【滅世血盟】</td><td class="nc" style="color:#e8c050">Lv.90</td></tr>
+              <tr><td class="nc rk2">🥈 2</td><td><a href="#" class="rk2">暗夜女王</a></td><td><span class="cbadge">黑暗妖精</span></td><td>【黎明守護】</td><td class="nc rk2">Lv.89</td></tr>
+              <tr><td class="nc rk3">🥉 3</td><td><a href="#" class="rk3">閃電法神</a></td><td><span class="cbadge">法師</span></td><td>【天空之城】</td><td class="nc rk3">Lv.88</td></tr>
+              <tr><td class="nc">4</td><td><a href="#">龍裔戰士</a></td><td><span class="cbadge">龍騎士</span></td><td>【滅世血盟】</td><td class="nc">Lv.87</td></tr>
+              <tr><td class="nc">5</td><td><a href="#">星辰幻師</a></td><td><span class="cbadge">幻術師</span></td><td>【九霄血盟】</td><td class="nc">Lv.86</td></tr>
+              <tr><td class="nc">6</td><td><a href="#">森林弓妖</a></td><td><span class="cbadge">妖精</span></td><td>【黎明守護】</td><td class="nc">Lv.85</td></tr>
+              <tr><td class="nc">7</td><td><a href="#">天命君主</a></td><td><span class="cbadge">君主</span></td><td>【天空之城】</td><td class="nc">Lv.84</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAP BADGE -->
+    <div id="page-mapbadge" style="display:none">
+      <div class="pnl">
+        <div class="pnl-h"><h2>🗺️ 地圖徽章資料庫</h2></div>
+        <div class="pnl-b" style="padding:8px;overflow-x:auto">
+          <table style="width:100%;border-collapse:collapse;font-size:11px;min-width:800px">
+            <thead>
+              <tr>
+                <th style="background:#0a1e3c;color:#c8a040;padding:7px 10px;border:1px solid #0c1c30;font-family:'Cinzel',serif;letter-spacing:.08em;white-space:nowrap">徽章名稱</th>
+                <th style="background:#0a1e3c;color:#6888a0;padding:7px 8px;border:1px solid #0c1c30;white-space:nowrap">碎片數量</th>
+                <th style="background:#0a1e3c;color:#6888a0;padding:7px 8px;border:1px solid #0c1c30;white-space:nowrap">所需金幣</th>
+                <th style="background:#0a1e3c;color:#ff8844;padding:7px 8px;border:1px solid #0c1c30;white-space:nowrap">額外攻擊</th>
+                <th style="background:#0a1e3c;color:#ffcc44;padding:7px 8px;border:1px solid #0c1c30;white-space:nowrap">武器命中</th>
+                <th style="background:#0a1e3c;color:#44aaff;padding:7px 8px;border:1px solid #0c1c30;white-space:nowrap">遠攻</th>
+                <th style="background:#0a1e3c;color:#44aaff;padding:7px 8px;border:1px solid #0c1c30;white-space:nowrap">遠攻命中</th>
+                <th style="background:#0a1e3c;color:#cc88ff;padding:7px 8px;border:1px solid #0c1c30;white-space:nowrap">魔攻</th>
+                <th style="background:#0a1e3c;color:#ff4444;padding:7px 8px;border:1px solid #0c1c30;white-space:nowrap">血</th>
+                <th style="background:#0a1e3c;color:#8888ff;padding:7px 8px;border:1px solid #0c1c30;white-space:nowrap">魔</th>
+                <th style="background:#0a1e3c;color:#44ff88;padding:7px 8px;border:1px solid #0c1c30;white-space:nowrap">回血</th>
+                <th style="background:#0a1e3c;color:#44ff88;padding:7px 8px;border:1px solid #0c1c30;white-space:nowrap">回魔</th>
+                <th style="background:#0a1e3c;color:#ffaa44;padding:7px 8px;border:1px solid #0c1c30;white-space:nowrap">物理減傷</th>
+              </tr>
+            </thead>
+            <tbody id="badgeTableBody">
+            </tbody>
+          </table>
+          <div style="margin-top:10px;font-size:11px;color:#2a4060;text-align:right">※ 夢島徽章為最高等級徽章，數值最為全面</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MATERIAL -->
+    <div id="page-material" style="display:none">
+      <div class="pnl">
+        <div class="pnl-h"><h2>📦 材料收集資料庫</h2></div>
+        <div class="pnl-b">
+          <div class="pnl" style="margin-bottom:10px">
+            <div class="pnl-h" style="background:linear-gradient(90deg,#1a0a00,#0e0600)"><h2>🗾 日本地圖系列｜埃裝材料</h2></div>
+            <div class="pnl-b" style="padding:6px">
+              <table style="width:100%;border-collapse:collapse;font-size:12px">
+                <thead><tr>
+                  <th style="background:#0a1e3c;color:#c8a040;padding:7px 12px;border:1px solid #0c1c30;width:130px;text-align:left;font-family:'Cinzel',serif;letter-spacing:.08em">地圖</th>
+                  <th style="background:#0a1e3c;color:#6888a0;padding:7px 12px;border:1px solid #0c1c30;text-align:left">掉落物品</th>
+                </tr></thead>
+                <tbody>
+                  <tr style="background:#040c18"><td style="padding:8px 12px;border:1px solid #060e18;color:#c8a040;font-weight:bold;white-space:nowrap">🗺️ 日本地圖（總覽）</td><td style="padding:8px 12px;border:1px solid #060e18;color:#8898a8">金幣、<span style="color:#ffcc44">火神之槌</span>、薩拉赫之魂、<span style="color:#44aaff">天賦之符碎片</span></td></tr>
+                  <tr style="background:#030609"><td style="padding:8px 12px;border:1px solid #060e18;color:#c8a040;font-weight:bold;white-space:nowrap">🏯 北之地</td><td style="padding:8px 12px;border:1px solid #060e18;color:#8898a8">金幣、<span style="color:#ffcc44">火神痕跡</span>、巡禮者之魂、<span style="color:#44aaff">天賦之符碎片</span></td></tr>
+                  <tr style="background:#040c18"><td style="padding:8px 12px;border:1px solid #060e18;color:#c8a040;font-weight:bold;white-space:nowrap">🏯 西之地</td><td style="padding:8px 12px;border:1px solid #060e18;color:#8898a8">金幣、<span style="color:#ffcc44">火焰的勳章</span>、納格巴斯之魂、武炫色石、防具炫色石</td></tr>
+                  <tr style="background:#030609"><td style="padding:8px 12px;border:1px solid #060e18;color:#c8a040;font-weight:bold;white-space:nowrap">🏯 東之地</td><td style="padding:8px 12px;border:1px solid #060e18;color:#8898a8">金幣、<span style="color:#ffcc44">火神契約</span>、格拉迪翁之魂、武炫色石、防具炫色石</td></tr>
+                  <tr style="background:#040c18"><td style="padding:8px 12px;border:1px solid #060e18;color:#c8a040;font-weight:bold;white-space:nowrap">🏯 城郭</td><td style="padding:8px 12px;border:1px solid #060e18;color:#8898a8">金幣、<span style="color:#ffcc44">火神的結晶</span>、杜佩里恩之魂、武炫色石、防具炫色石</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="pnl" style="margin-bottom:10px">
+            <div class="pnl-h" style="background:linear-gradient(90deg,#001a2a,#000e18)"><h2>🗺️ 其他地圖掉落</h2></div>
+            <div class="pnl-b" style="padding:6px">
+              <table style="width:100%;border-collapse:collapse;font-size:12px">
+                <thead><tr>
+                  <th style="background:#0a1e3c;color:#c8a040;padding:7px 12px;border:1px solid #0c1c30;width:160px;text-align:left;font-family:'Cinzel',serif;letter-spacing:.08em">地圖</th>
+                  <th style="background:#0a1e3c;color:#6888a0;padding:7px 12px;border:1px solid #0c1c30;text-align:left">掉落物品</th>
+                </tr></thead>
+                <tbody>
+                  <tr style="background:#040c18"><td style="padding:8px 12px;border:1px solid #060e18;color:#c8a040;font-weight:bold;white-space:nowrap">🏝️ 遺忘之島</td><td style="padding:8px 12px;border:1px solid #060e18;color:#8898a8"><span style="color:#ffcc44">變身卡箱</span>、古代的卷軸</td></tr>
+                  <tr style="background:#030609"><td style="padding:8px 12px;border:1px solid #060e18;color:#c8a040;font-weight:bold;white-space:nowrap">🏝️ 新遺忘之島</td><td style="padding:8px 12px;border:1px solid #060e18;color:#8898a8"><span style="color:#44cc66">裝備保護卷（25%）</span>、祝武、防卷</td></tr>
+                  <tr style="background:#040c18"><td style="padding:8px 12px;border:1px solid #060e18;color:#c8a040;font-weight:bold;white-space:nowrap">🏰 舊傲慢之塔</td><td style="padding:8px 12px;border:1px solid #060e18;color:#8898a8"><span style="color:#ffcc44">傲幣</span>、娃娃卡箱</td></tr>
+                  <tr style="background:#030609"><td style="padding:8px 12px;border:1px solid #060e18;color:#c8a040;font-weight:bold;white-space:nowrap">🏰 新傲慢之塔 1–9F</td><td style="padding:8px 12px;border:1px solid #060e18;color:#8898a8"><span style="color:#44aaff">淨化的魔法書</span></td></tr>
+                  <tr style="background:#040c18"><td style="padding:8px 12px;border:1px solid #060e18;color:#ff4444;font-weight:bold;white-space:nowrap">🏰 新傲慢之塔 10F</td><td style="padding:8px 12px;border:1px solid #060e18;color:#8898a8"><span style="color:#ff8844">反擊屏障</span>、<span style="color:#ff8844">烈焰之魂</span>、<span style="color:#ff8844">究極光裂術</span>、<span style="color:#ff8844">流星雨</span>、<span style="color:#ff8844">精準射擊封印書</span></td></tr>
+                  <tr style="background:#030609"><td style="padding:8px 12px;border:1px solid #060e18;color:#c8a040;font-weight:bold;white-space:nowrap">🌿 神力隱谷</td><td style="padding:8px 12px;border:1px solid #060e18;color:#8898a8">祝、紅武、防卷；<span style="color:#ffcc44">金裝各式憑證</span>、常暗之棺碎片（九尾妖狐）、<span style="color:#44aaff">天賦之符碎片</span></td></tr>
+                  <tr style="background:#040c18"><td style="padding:8px 12px;border:1px solid #060e18;color:#f0c060;font-weight:bold;white-space:nowrap">✨ 夢幻之島</td><td style="padding:8px 12px;border:1px solid #060e18;color:#8898a8"><span style="color:#44ff88">力量、敏捷、體質、智慧、精神、魅力萬能藥</span></td></tr>
+                  <tr style="background:#030609"><td style="padding:8px 12px;border:1px solid #060e18;color:#ff4444;font-weight:bold;white-space:nowrap">👹 惡魔王領地</td><td style="padding:8px 12px;border:1px solid #060e18;color:#8898a8">武、<span style="color:#ffcc44">防具炫色石</span>、無慾、純潔、沉默、真實、<span style="color:#ff8844">信仰碎片（龍武材料）</span></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="pnl" style="margin-bottom:0">
+            <div class="pnl-h" style="background:linear-gradient(90deg,#001a10,#000e08)"><h2>🟦 青變材料｜新古魯丁地監</h2></div>
+            <div class="pnl-b" style="padding:6px">
+              <table style="width:100%;border-collapse:collapse;font-size:12px">
+                <thead><tr>
+                  <th style="background:#0a1e3c;color:#c8a040;padding:7px 12px;border:1px solid #0c1c30;width:160px;text-align:left;font-family:'Cinzel',serif;letter-spacing:.08em">地監樓層</th>
+                  <th style="background:#0a1e3c;color:#6888a0;padding:7px 12px;border:1px solid #0c1c30;text-align:left">掉落物品</th>
+                </tr></thead>
+                <tbody>
+                  <tr style="background:#040c18"><td style="padding:8px 12px;border:1px solid #060e18;color:#88ccff;font-weight:bold">🏚️ 1樓</td><td style="padding:8px 12px;border:1px solid #060e18;color:#8898a8"><span style="color:#44aaff">靈魂幣</span>、冷冽的氣息、英雄傳記</td></tr>
+                  <tr style="background:#030609"><td style="padding:8px 12px;border:1px solid #060e18;color:#88ccff;font-weight:bold">🏚️ 2樓</td><td style="padding:8px 12px;border:1px solid #060e18;color:#8898a8"><span style="color:#44aaff">靈魂幣</span>、冷冽的氣息、英雄傳記</td></tr>
+                  <tr style="background:#040c18"><td style="padding:8px 12px;border:1px solid #060e18;color:#88ccff;font-weight:bold">🏚️ 3樓</td><td style="padding:8px 12px;border:1px solid #060e18;color:#8898a8"><span style="color:#44aaff">靈魂幣</span>、閃耀的鱗片</td></tr>
+                  <tr style="background:#030609"><td style="padding:8px 12px;border:1px solid #060e18;color:#88ccff;font-weight:bold">🏚️ 4樓</td><td style="padding:8px 12px;border:1px solid #060e18;color:#8898a8"><span style="color:#44aaff">靈魂幣</span>、閃耀的鱗片</td></tr>
+                  <tr style="background:#040c18"><td style="padding:8px 12px;border:1px solid #060e18;color:#88ccff;font-weight:bold">🏚️ 5樓</td><td style="padding:8px 12px;border:1px solid #060e18;color:#8898a8"><span style="color:#44aaff">靈魂幣</span>、光之加護</td></tr>
+                  <tr style="background:#030609"><td style="padding:8px 12px;border:1px solid #060e18;color:#88ccff;font-weight:bold">🏚️ 6樓</td><td style="padding:8px 12px;border:1px solid #060e18;color:#8898a8"><span style="color:#44aaff">靈魂幣</span>、光之加護</td></tr>
+                  <tr style="background:#1a0e00"><td style="padding:8px 12px;border:1px solid #c8942844;color:#f0c060;font-weight:bold">👑 7樓（頂層）</td><td style="padding:8px 12px;border:1px solid #c8942844;color:#8898a8"><span style="color:#44aaff">靈魂幣</span>、<span style="color:#ffcc44">月靈之魂</span></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- NEWBIE -->
+    <div id="page-newbie" style="display:none">
+      <div class="pnl">
+        <div class="pnl-h"><h2>📖 新手指導教學</h2></div>
+        <div class="pnl-b" style="font-size:12px;line-height:1.9;color:#8898a8">
+          <div class="pnl" style="margin-bottom:10px">
+            <div class="pnl-h" style="background:linear-gradient(90deg,#0a2200,#061400)"><h2>🌱 新手指引</h2></div>
+            <div class="pnl-b" style="line-height:2">
+              <p>進入遊戲後，角色背包會有 <span style="color:#ffcc44">2把武器</span>，名稱為<span style="color:#44aaff">戰神XXX</span>（依角色名稱有所不同），皆為 <span style="color:#44cc66">+9武器</span>，可直接使用。</p>
+              <p style="margin-top:6px">人物身上會有七原罪新手禮包、經驗項鍊、經驗腰帶、抗魔法脛甲、亞斯克雷之靴，打開禮包後會有各式防具以及飾品，<span style="color:#ff8844">新手衝等前三天，記得使用經驗項鍊及腰帶。</span></p>
+              <p style="margin-top:6px">開啟禮包後依照職業，選擇所需搭配之內衣、手套、鞋子等防具，其中斗篷有四種，四種選一個喜歡的屬性裝備，項鍊及戒指先挑選想使用的，後續做裝備時再挑選即可。</p>
+              <p style="margin-top:6px">裝備穿戴後即可開始練功，新手練功進度可參閱新手教學，沒有一定可自行摸索。</p>
+            </div>
+          </div>
+          <div class="pnl" style="margin-bottom:10px">
+            <div class="pnl-h" style="background:linear-gradient(90deg,#001a2a,#000e18)"><h2>⚙️ 內掛（自動練功說明）</h2></div>
+            <div class="pnl-b">
+              <p style="margin-bottom:10px">開啟角色包包，裡頭共有 <span style="color:#ffcc44">5項</span> 可以設定，以下僅介紹幾個較為重要的資訊：</p>
+              <div style="display:flex;flex-direction:column;gap:8px">
+                <div style="background:#040c18;border-left:2px solid #44aaff;padding:10px 14px"><div style="color:#44aaff;font-weight:bold;margin-bottom:4px">🔵 自動購買藥水</div><p>點開後請先點選是否自動偵測，點選後右邊關閉會顯示開啟。所有的品項皆需完成第一步驟才能使用，開啟後點選品項右邊的OK，點選OK後右邊的關閉會顯示開啟，在點選左邊的數字0，人物對話欄會顯示所需購買數量，直接輸入數字在對話欄上後送出即可完成設定，<span style="color:#ffcc44">每個數量最高上限為1000。</span></p></div>
+                <div style="background:#040c18;border-left:2px solid #cc88ff;padding:10px 14px"><div style="color:#cc88ff;font-weight:bold;margin-bottom:4px">🟣 自動施放魔法</div><p>與購買藥水相同，一樣先點選自動魔法攻擊，點選後右邊關閉會顯示開啟。可點選魔力大於幾%時施放，共有單體技能與範圍技能，<span style="color:#ffcc44">要有學會才會顯示在上面。</span></p></div>
+                <div style="background:#040c18;border-left:2px solid #44cc66;padding:10px 14px"><div style="color:#44cc66;font-weight:bold;margin-bottom:4px">🟢 自動搜怪設定</div><p>共有定點巡視及順移模式，順移模式共有三個選項，指定傳送、順移卷軸、不使用，必須先點選才會依照所設定的方式去練功，秒數開關下方的開關記得點選。</p></div>
+                <div style="background:#040c18;border-left:2px solid #ffcc44;padding:10px 14px"><div style="color:#ffcc44;font-weight:bold;margin-bottom:4px">🟡 其他功能設定</div><p>此功能最重要的設定為下方遇到BOSS是否順移，如需使用，一樣先點選開關在點選下方的順移，點好後兩個的右邊會顯示開啟以及順移。</p></div>
+              </div>
+            </div>
+          </div>
+          <div class="pnl" style="margin-bottom:10px">
+            <div class="pnl-h" style="background:linear-gradient(90deg,#1a0800,#0e0400)"><h2>💰 重要道具介紹（幣種）</h2></div>
+            <div class="pnl-b" style="display:flex;flex-direction:column;gap:6px">
+              <div style="background:#040c18;border:1px solid #0c1c2c;padding:9px 14px"><span style="color:#ffcc44;font-weight:bold">推文幣</span><span style="color:#6888a0;margin-left:6px">經由FB推文或直播取得，可於推文商人購買商品，如5%武器、防禦卷。</span></div>
+              <div style="background:#040c18;border:1px solid #0c1c2c;padding:9px 14px"><span style="color:#ffcc44;font-weight:bold">威望幣</span><span style="color:#6888a0;margin-left:6px">經由狩獵怪物取得，於威望商人購買威望藥水，可大幅增加角色能力，目前僅開放到滅世境。</span></div>
+              <div style="background:#040c18;border:1px solid #0c1c2c;padding:9px 14px"><span style="color:#ffcc44;font-weight:bold">簽到幣</span><span style="color:#6888a0;margin-left:6px">於每日簽到NPC簽到即可獲取，可於簽到商人那購買商品。商人位於主城上方傳送師旁。</span></div>
+              <div style="background:#040c18;border:1px solid #c8942844;padding:9px 14px;border-left:2px solid #c89428"><span style="color:#c8a040;font-weight:bold">傲幣</span><span style="color:#6888a0;margin-left:6px">遊戲內最重要的幣種，於舊傲慢之塔打怪獲取，可於傲幣商人購買武器、防具升階所需之<span style="color:#44aaff">藍</span>、<span style="color:#ff4444">紅</span>、<span style="color:#cc88ff">紫</span>、<span style="color:#ffcc44">金布</span>以及強化卷，為遊戲內最重要之幣種之一。</span></div>
+              <div style="background:#040c18;border:1px solid #0c1c2c;padding:9px 14px"><span style="color:#44aaff;font-weight:bold">藍鑽</span><span style="color:#6888a0;margin-left:6px">經由贊助遊戲後，由GM發送給玩家，可於贊助商人購買月卡、LV2古白(包月)、蛋糕(包月)、經驗藥水、10%卷等物資，可大幅提升角色練功效率及角色強度，依個人意願贊助。</span></div>
+            </div>
+          </div>
+          <div class="pnl" style="margin-bottom:10px">
+            <div class="pnl-h" style="background:linear-gradient(90deg,#0a1a00,#060e00)"><h2>📜 各類製作祕笈介紹</h2></div>
+            <div class="pnl-b" style="display:flex;flex-direction:column;gap:5px">
+              <p style="color:#6888a0;margin-bottom:8px">目前遊戲中各有8種祕笈，可用於做武器、防具或是武器及防具升階時使用，以下為取得方式及用途。</p>
+              <div style="background:#040c18;border-left:2px solid #8888cc;padding:8px 14px"><span style="color:#8888cc;font-weight:bold">魔族製作祕笈</span><span style="color:#6888a0;margin-left:6px">取得方式為舊、新遺忘之島，用於製作各職業隱藏魔族武器，素質比創角的戰神武器差。</span></div>
+              <div style="background:#040c18;border-left:2px solid #44aaff;padding:8px 14px"><span style="color:#44aaff;font-weight:bold">稀有製作祕笈（藍布）</span><span style="color:#6888a0;margin-left:6px">取得方式為舊、新遺忘之島或是奧塔商人購買，用於製作各職業戰神武器。</span></div>
+              <div style="background:#040c18;border-left:2px solid #44aaff;padding:8px 14px"><span style="color:#44aaff;font-weight:bold">稀有防具祕笈（盾牌）</span><span style="color:#6888a0;margin-left:6px">取得方式為舊、新遺忘之島，用於製作屬性內衣、屬性長靴、屬性斗篷，可於主城稀有工匠NPC製作。</span></div>
+              <div style="background:#040c18;border-left:2px solid #ff4444;padding:8px 14px"><span style="color:#ff4444;font-weight:bold">英雄製作祕笈（紅布）</span><span style="color:#6888a0;margin-left:6px">取得方式為舊、新遺忘之島或是奧塔商人購買，用於升階戰神武器及防具。</span></div>
+              <div style="background:#040c18;border-left:2px solid #ff4444;padding:8px 14px"><span style="color:#ff4444;font-weight:bold">英雄防具祕笈（盾牌）</span><span style="color:#6888a0;margin-left:6px">取得方式為舊、新遺忘之島，用於製作屬性脛甲，可於主城英雄工匠NPC製作。</span></div>
+              <div style="background:#040c18;border-left:2px solid #cc88ff;padding:8px 14px"><span style="color:#cc88ff;font-weight:bold">傳說製作祕笈（紫布）</span><span style="color:#6888a0;margin-left:6px">取得方式為傲幣商人，用於升階英雄武器及防具。</span></div>
+              <div style="background:#040c18;border-left:2px solid #cc88ff;padding:8px 14px"><span style="color:#cc88ff;font-weight:bold">傳說製作祕笈（盾牌）</span><span style="color:#6888a0;margin-left:6px">取得方式為GM活動時開放掉落，可製作70等屬性符石，符石找綜合工匠製作。</span></div>
+              <div style="background:#040c18;border-left:2px solid #ffcc44;padding:8px 14px"><span style="color:#ffcc44;font-weight:bold">神話製作祕笈（金布）</span><span style="color:#6888a0;margin-left:6px">取得方式為傲幣商人，用於升階傳說武器及防具。</span></div>
+              <p style="color:#6888a0;margin-top:8px">只有<span style="color:#44aaff">藍布</span>及<span style="color:#ff4444">紅布</span>可由打怪取得，<span style="color:#cc88ff">紫布</span>及<span style="color:#ffcc44">金布</span>皆需使用傲幣購買。藍布製作的裝備統稱<span style="color:#44aaff">藍裝、藍武</span>，紅布製作為<span style="color:#ff4444">紅裝、紅武</span>，其餘以此類推。</p>
+            </div>
+          </div>
+          <div class="pnl" style="margin-bottom:10px">
+            <div class="pnl-h" style="background:linear-gradient(90deg,#001a2a,#000e18)"><h2>🛡️ 裝備說明</h2></div>
+            <div class="pnl-b">
+              <div style="background:#040c18;border:1px solid #c8942844;border-left:2px solid #c89428;padding:10px 14px;margin-bottom:8px">
+                <div style="color:#c8a040;font-weight:bold;margin-bottom:4px">⚔️ 武器升階流程</div>
+                <p style="color:#6888a0">武器依照製作流程順序為 <span style="color:#44aaff">戰神(藍武)</span> → <span style="color:#ff4444">火神(紅武)</span> → <span style="color:#cc88ff">惡魔(紫武)</span> → <span style="color:#ffcc44">頁・英雄(金武)</span> → 龍武。皆是找主城下方的總管商人製作，其中XX武器稀有憑證，皆是由+9武器點選總管下方融合系統去兌換。</p>
+              </div>
+              <div style="display:flex;flex-direction:column;gap:6px">
+                <div style="background:#040c18;border:1px solid #0c1c2c;padding:9px 14px"><div style="color:#ffcc44;font-weight:bold;margin-bottom:3px">頭盔</div><p style="color:#6888a0">由新手裝備的+7抗盔開始做起，搭配<span style="color:#ff4444">紅布</span>及奧幣，將頭盔升級為<span style="color:#44aaff">魔法頭盔</span>後，再由奧幣商人購買魔法頭盔強化卷軸進行強化，強化至<span style="color:#ffcc44">猙狂頭盔</span>後可免疫中毒。</p><p style="color:#3a5068;margin-top:4px">流程：+7抗盔 + 紅布 + 300奧幣 &gt;&gt; <span style="color:#44aaff">魔法頭盔</span>（使用強化卷）&gt;&gt; <span style="color:#ffcc44">猙狂頭盔</span></p></div>
+                <div style="background:#040c18;border:1px solid #0c1c2c;padding:9px 14px"><div style="color:#ffcc44;font-weight:bold;margin-bottom:3px">內衣</div><p style="color:#6888a0">由新手禮包開啟 <span style="color:#ff4444">+10絕對冥魂T恤</span> 系列已是紅防，由奧幣商人購買紫布搭配奧幣將T恤製作成紫T。</p><p style="color:#3a5068;margin-top:4px">流程：+10絕對冥魂T恤 + 紫布 + 600奧幣 &gt;&gt; <span style="color:#cc88ff">+9滅龍魔法T恤</span></p></div>
+                <div style="background:#040c18;border:1px solid #0c1c2c;padding:9px 14px"><div style="color:#ffcc44;font-weight:bold;margin-bottom:3px">盔甲</div><p style="color:#6888a0">於舊遺忘打古卷及封印的盔甲系列後，找主城上方NPC遺忘島迪泰特解除封印，再去奇岩主城找下方滅魔系列NPC，將新手一開始拿到的+7抗鍊製作成滅魔系列盔甲，此盔甲安定0。</p><p style="color:#3a5068;margin-top:4px">流程：古卷 + 封印盔甲 &gt;&gt; 古老盔甲 &gt;&gt; +7抗鍊 + 古老盔甲 &gt;&gt; <span style="color:#cc88ff">滅魔系列盔甲</span></p></div>
+                <div style="background:#040c18;border:1px solid #0c1c2c;padding:9px 14px"><div style="color:#ffcc44;font-weight:bold;margin-bottom:3px">斗篷</div><p style="color:#6888a0">由新手禮包開啟<span style="color:#ff4444">黑帝斯斗篷</span>系列已是紅防，由奧幣商人購買黑帝斯斗篷強化卷，將斗篷強化至9階後再購買紫布，將斗篷升級為<span style="color:#cc88ff">魔化的 黑帝斯斗篷</span>。</p><p style="color:#3a5068;margin-top:4px">流程：黑帝斯斗篷 + 紫布 + 600奧幣 &gt;&gt; <span style="color:#cc88ff">魔化的 黑帝斯斗篷</span></p></div>
+                <div style="background:#040c18;border:1px solid #0c1c2c;padding:9px 14px"><div style="color:#ffcc44;font-weight:bold;margin-bottom:3px">臂甲</div><p style="color:#6888a0">由新手禮包開啟臂甲系列已是紅防，由奧幣商人購買狂戰臂甲強化卷軸，將臂甲強化至9階後，再去奧塔商人購買紫布，將臂甲升階為<span style="color:#44aaff">光龍臂甲</span>，完成後可再買一張金布，將臂甲升級為半套金裝。</p><p style="color:#3a5068;margin-top:4px">流程：屬性臂甲 &gt;&gt; 9階 &gt;&gt; + 紫布 + 600奧幣 &gt;&gt; <span style="color:#44aaff">光龍臂甲</span> &gt;&gt; + 金布 + 600奧幣 &gt;&gt; <span style="color:#ffcc44">光龍覺醒臂甲（半金裝）</span></p></div>
+                <div style="background:#040c18;border:1px solid #0c1c2c;padding:9px 14px"><div style="color:#ffcc44;font-weight:bold;margin-bottom:3px">手套</div><p style="color:#6888a0">由新手禮包開啟楚王護手系列已是紅防，需新遺忘所打到的裝備保護卷，配合祝防卷，點至+7楚王護手後，再購買紫布將手套升階為<span style="color:#cc88ff">遠古霸王手套</span>。</p><p style="color:#3a5068;margin-top:4px">流程：+7楚王護手 + 紫布 + 600奧幣 &gt;&gt; <span style="color:#cc88ff">遠古霸王手套</span></p></div>
+                <div style="background:#040c18;border:1px solid #0c1c2c;padding:9px 14px"><div style="color:#ffcc44;font-weight:bold;margin-bottom:3px">鞋子</div><p style="color:#6888a0">由新手禮包開啟亞斯克雷之靴系列已是紅防，由奧幣商人購買亞斯克雷的強化卷，將鞋子強化至<span style="color:#ff4444">9階亞斯克雷之靴</span>。</p></div>
+                <div style="background:#040c18;border:1px solid #c8942844;border-left:2px solid #ff4444;padding:9px 14px"><div style="color:#ff4444;font-weight:bold;margin-bottom:3px">脛甲（重要）</div><p style="color:#6888a0">由新手裝備的+4抗魔法脛甲開始，初期祝防稀少，可先將其餘裝備升界後，再去打保護卷及祝防將抗魔法脛甲點至+7後，再到主城<span style="color:#44cc66">英雄工匠NPC</span>製作屬性脛甲，製作好屬性脛甲後一樣使用保護卷及祝防將屬性脛甲點至+7，並搭配紅布將屬性脛甲升級為死亡騎士脛甲，再購買死亡騎士脛甲強化卷將脛甲點至9階死亡騎士脛甲，9階後再購買紫布將9階死亡騎士脛甲升為9階極死亡騎士脛甲。<span style="color:#ff4444">需注意一點由於抗魔法脛甲目前無法製作，所以創角時所送的脛甲需好好保存，如果不小心點爆，需重新創角領取。</span></p><p style="color:#3a5068;margin-top:4px">流程：+7抗魔法脛甲 + 紅布(盾牌) + 天幣5W &gt;&gt; 屬性脛甲 &gt;&gt; +7屬性脛甲 + 紅布 &gt;&gt; 死亡騎士脛甲 &gt;&gt; 9階死亡騎士脛甲 + 紫布 + 600奧幣 &gt;&gt; <span style="color:#cc88ff">9階極 死亡騎士脛甲</span></p></div>
+              </div>
+            </div>
+          </div>
+          <div class="pnl" style="margin-bottom:10px">
+            <div class="pnl-h" style="background:linear-gradient(90deg,#1a0a00,#0e0600)"><h2>💍 飾品說明</h2></div>
+            <div class="pnl-b" style="display:flex;flex-direction:column;gap:6px">
+              <div style="background:#040c18;border:1px solid #0c1c2c;padding:9px 14px"><div style="color:#ffcc44;font-weight:bold;margin-bottom:3px">腰帶</div><p style="color:#6888a0">由新手禮包開啟殷海薩腰帶系列，搭配藍布將腰帶升階為<span style="color:#44aaff">光之殷海薩腰帶</span>，再去奧幣商人購買光之殷海薩強化卷軸，將腰帶升階至5階後，再購買紫布將腰帶升階為<span style="color:#cc88ff">狂龍腰帶</span>。</p><p style="color:#3a5068;margin-top:4px">流程：殷海薩腰帶 + 藍布 &gt;&gt; 光之殷海薩腰帶 &gt;&gt; 5階光之殷海薩腰帶 + 紫布 + 600奧幣 &gt;&gt; <span style="color:#cc88ff">狂龍腰帶</span></p></div>
+              <div style="background:#040c18;border:1px solid #0c1c2c;padding:9px 14px"><div style="color:#ffcc44;font-weight:bold;margin-bottom:3px">項鍊</div><p style="color:#6888a0">由新手禮包開啟屬性永恆項鍊系列，由奧幣商人購買永恆項鍊強化卷軸，將項鍊升階為9階永恆項鍊，升階完成後搭配紅布將9階永恆項鍊升階為<span style="color:#ff4444">守護之鍊</span>，再購買紫布將守護之鍊升階為<span style="color:#cc88ff">真·守護之鍊</span>。</p><p style="color:#3a5068;margin-top:4px">流程：9階永恆項鍊 + 紅布 + 300奧幣 &gt;&gt; 守護之鍊 &gt;&gt; + 紫布 + 600奧幣 &gt;&gt; <span style="color:#cc88ff">真·守護之鍊</span></p></div>
+              <div style="background:#040c18;border:1px solid #0c1c2c;padding:9px 14px"><div style="color:#ffcc44;font-weight:bold;margin-bottom:3px">耳環</div><p style="color:#6888a0">由新手禮包開啟共有4種屬性耳環（藍、黑、紫、紅），耳環可戴兩種，需達一定等級才可開啟耳環第二欄位。藍耳製作防耳、紫耳製作智耳、黑耳製作力耳、紅耳製作敏耳。皆由奧幣商人購買麥斯特耳環強化卷將耳環點至8階後，再購買紅布將耳環升階為<span style="color:#ff4444">星星耳環</span>。</p><p style="color:#3a5068;margin-top:4px">流程：8階屬性耳環 + 紅布 + 300奧幣 &gt;&gt; <span style="color:#ff4444">星星耳環</span></p></div>
+              <div style="background:#040c18;border:1px solid #0c1c2c;padding:9px 14px"><div style="color:#ffcc44;font-weight:bold;margin-bottom:3px">戒指</div><p style="color:#6888a0">由新手禮包開啟共有4種屬性戒指（集中、抗魔、體力、魔力），戒指可配戴四類，一開始可戴2類，之後戒指欄位一樣需達一定等級後才能開啟。皆由奧幣商人購買永恆戒指強化卷將戒指點至9階後，搭配紅布將戒指升階為<span style="color:#ff4444">豐天戒指</span>，升皆完成後再購買紫布將戒指升階為<span style="color:#cc88ff">元祖。豐天戒指</span>。</p><p style="color:#3a5068;margin-top:4px">流程：9階戒指 + 紅布 + 300奧幣 &gt;&gt; <span style="color:#ff4444">豐天戒指</span> &gt;&gt; + 紫布 + 600奧幣 &gt;&gt; <span style="color:#cc88ff">元祖。豐天戒指</span></p></div>
+              <p style="color:#ffcc44;margin-top:4px">⚠️ 裝備、飾品製作都需大量奧幣，開起手需要多點耐心農奧幣。以上武器、防具、飾品完成後，可以開始蒐集金裝憑證，將防具、飾品升皆為金裝，奧幣商人所販售的強化卷，升級金裝時每一件都各需要<span style="color:#ff4444">500張強化卷</span>，所以如果在升階時有剩得切記勿丟棄。</p>
+            </div>
+          </div>
+          <div class="pnl" style="margin-bottom:10px">
+            <div class="pnl-h" style="background:linear-gradient(90deg,#0a1a00,#060e00)"><h2>💪 角色能力加強途徑</h2></div>
+            <div class="pnl-b" style="display:flex;flex-direction:column;gap:5px">
+              <div style="background:#040c18;border:1px solid #0c1c2c;padding:8px 14px"><span style="color:#ffcc44;font-weight:bold">1. 威望藥水</span><span style="color:#6888a0;margin-left:6px">打怪獲取威望幣，可於威望商人購買藥水，新手必買，此為最簡單獲得的物品。</span></div>
+              <div style="background:#040c18;border:1px solid #0c1c2c;padding:8px 14px"><span style="color:#ffcc44;font-weight:bold">2. 紋樣</span><span style="color:#6888a0;margin-left:6px">角色身上有紋樣石板，點開後可升級紋樣，紋樣點數可找傳師&gt;&gt;海音&gt;&gt;水之領域，裡頭怪物會掉落紋樣寶箱，寶箱開啟後獲得點數，即可升級紋樣。紋樣首先建議將帕格裡奧升至20~25等後，再升級其餘至25等後，再回頭將全部點滿，大幅增加血、魔、減傷等素質。</span></div>
+              <div style="background:#040c18;border:1px solid #0c1c2c;padding:8px 14px"><span style="color:#ffcc44;font-weight:bold">3. 簽到卡</span><span style="color:#6888a0;margin-left:6px">每日簽到可至簽到商人獲取簽到石，可以升級簽到卡，失敗會退階，建議存大量再點。</span></div>
+              <div style="background:#040c18;border:1px solid #0c1c2c;padding:8px 14px"><span style="color:#ffcc44;font-weight:bold">4. FB推廣符文</span><span style="color:#6888a0;margin-left:6px">每日推廣商人購買，再購買FB推廣符強化卷將此徽章升級至最滿MAX。</span></div>
+              <div style="background:#040c18;border:1px solid #0c1c2c;padding:8px 14px"><span style="color:#ffcc44;font-weight:bold">5. 赫卡特</span><span style="color:#6888a0;margin-left:6px">每日推廣商人購買，再購買赫卡特強化卷軸強化至+9赫卡特。</span></div>
+              <div style="background:#040c18;border:1px solid #0c1c2c;padding:8px 14px"><span style="color:#ffcc44;font-weight:bold">6. 六芒星護身符</span><span style="color:#6888a0;margin-left:6px">贊助商人購買或是奧幣商人(35W奧幣)購買，再使用淨化魔法書將此護符點至護身符H。</span></div>
+              <div style="background:#040c18;border:1px solid #0c1c2c;padding:8px 14px"><span style="color:#ffcc44;font-weight:bold">7. 地圖勳章</span><span style="color:#6888a0;margin-left:6px">主城NPC可製作，需至所需地圖打碎片製作。</span></div>
+              <div style="background:#040c18;border:1px solid #0c1c2c;padding:8px 14px"><span style="color:#ffcc44;font-weight:bold">8. 萬能藥</span><span style="color:#6888a0;margin-left:6px">夢幻之島打萬能藥，將角色能力點滿，99等1轉前需喝滿並洗血。</span></div>
+              <div style="background:#040c18;border:1px solid #0c1c2c;padding:8px 14px"><span style="color:#ffcc44;font-weight:bold">9. 變身卡</span><span style="color:#6888a0;margin-left:6px">舊遺忘之島掉落變身卡箱，卡片共有白、綠、藍、紅、紫、金，將各類顏色卡片吃滿，大幅增加角色能力，可找主城NPC進行合卡。</span></div>
+              <div style="background:#040c18;border:1px solid #0c1c2c;padding:8px 14px"><span style="color:#ffcc44;font-weight:bold">10. 娃娃卡</span><span style="color:#6888a0;margin-left:6px">舊傲慢之塔掉落娃娃卡箱，卡片共有白、綠、藍、紅、紫、金，將各類顏色卡片吃滿，大幅增加角色能力，可找主城NPC進行合卡。</span></div>
+              <div style="background:#040c18;border:1px solid #0c1c2c;padding:8px 14px"><span style="color:#ffcc44;font-weight:bold">11. 包月月卡</span><span style="color:#6888a0;margin-left:6px">於藍鑽商人購買，大幅增加角色能力以及經驗，有預算的玩家非常推薦。</span></div>
+              <div style="background:#040c18;border:1px solid #0c1c2c;padding:8px 14px"><span style="color:#ffcc44;font-weight:bold">12. 圖鑑蒐集</span><span style="color:#6888a0;margin-left:6px">總管商人&gt;&gt;圖鑑蒐集，可以增加角色血、魔、減傷、攻擊等素質。</span></div>
+            </div>
+          </div>
+          <div class="pnl" style="margin-bottom:0">
+            <div class="pnl-h" style="background:linear-gradient(90deg,#1a0000,#0e0000)"><h2>🚀 新手攻略（更新版）</h2></div>
+            <div class="pnl-b" style="display:flex;flex-direction:column;gap:8px">
+              <div style="background:#040c18;border:1px solid #c8942844;border-top:2px solid #c89428;padding:12px 14px"><div style="color:#c8a040;font-weight:bold;margin-bottom:6px">📌 重要提醒</div><p style="color:#6888a0">此版角色有自創金技，角色間還算是平衡，可以自由選擇想玩職業，<span style="color:#ff8844">法師初期會較辛苦，建議還是要有分身來養。</span></p><p style="color:#6888a0;margin-top:6px">電腦如果夠力，推薦3分身帶1主力，推薦妖精農資源（奧幣、娃娃箱、變身卡箱），創角後穿上包包武器及裝備，武器GM已設定為+9武器，其餘部分防具已更改為紅裝起手。</p></div>
+              <div style="background:#040c18;border:1px solid #0c1c2c;padding:12px 14px"><div style="color:#44cc66;font-weight:bold;margin-bottom:6px">📍 起手流程</div><p style="color:#6888a0">出生點於話島，裝備配戴完成後，包包有提供天堂變身卷(紅)點開後可以兌換，找自己喜歡的變身即可，近戰就選取近戰，弓手就選取弓手變身，可增加大量血魔。變身完成後，可再話島練到話島碎片集滿50個，50個後飛回主城找右上方，地圖勳章NPC製作徽章，接下來找傳師&gt;&gt;拉斯塔八德地區&gt;&gt;飛三樓存些武防卷，賣給商人後，擁有一些水錢就可以轉戰奧塔，妖精三重、法師聖界等<span style="color:#ffcc44">50集禮包會贈送</span>，也可以大群問看好心的群友，願不願意提供，此外妖精的三重矢需要40等後才能使用內掛施放。</p></div>
+              <div style="background:#040c18;border:1px solid #0c1c2c;padding:12px 14px"><div style="color:#44aaff;font-weight:bold;margin-bottom:6px">💡 妖精起手建議</div><p style="color:#6888a0">妖精起手建議學水屬性，此版生祝有大幅提升補血量，法師全智也有，妖精學會生祝後就可以開始農奧幣，一開始先將飾品點去紅裝或紫裝（飾品有加攻擊跟減傷），再將其他防具升階至9階，防具推薦先將頭盔點至猙狂頭盔，再將其他裝備點至紅或紫，期間打到的娃娃箱子可以開啟並吃掉合成。</p></div>
+              <div style="background:#040c18;border:1px solid #0c1c2c;padding:12px 14px"><div style="color:#cc88ff;font-weight:bold;margin-bottom:6px">🎯 中期目標</div><p style="color:#6888a0">裝備差不多成型後，可以將部分角色拉去舊遺忘之塔打變身卡箱，其餘角色去新遺忘打防爆卷，將身上裝備需要防具卷的裝備點上去，通常都是3之角色集體餵1之角色，等農到莊變身卡及娃娃卡都至少將紫以下都吃，以及裝備升滿需要金裝憑證後，就可以考慮開始掛支配塔或是神力地圖打金裝憑證。</p><p style="color:#6888a0;margin-top:6px"><span style="color:#ffcc44">神力地圖由於不能自動，所以金裝憑證掉落率比支配塔高很多，非常適合手動玩家。</span></p></div>
+              <div style="background:#040c18;border:1px solid #c8942844;border-left:2px solid #44ff88;padding:12px 14px"><div style="color:#44ff88;font-weight:bold;margin-bottom:6px">📋 總結流程</div><p style="color:#6888a0">出話島 &gt;&gt; 拉3賺錢 &gt;&gt; 改掛奧塔存奧幣提升裝備、累積娃娃卡 &gt;&gt; 舊遺忘打變身卡箱 &gt;&gt; 新遺忘打保護卷 &gt;&gt; 水之領域打紋樣寶箱 &gt;&gt; 開始農金裝憑證 &gt;&gt; 金裝農好 &gt;&gt; 改掛惡魔王圖鑑蒐集武、防炫色石點裝備</p><p style="color:#6888a0;margin-top:6px">角色衡等：必買推廣1階藥水及藍鑽二階藥水，紅紫裝新遺忘，金裝後手動神力或惡魔王圖，或使用起始回生去新古丁2樓爆不死系，所有職業都適合。</p><p style="color:#ff8844;margin-top:6px">⚠️ 由於此版本武器為魔法武器，所以有吃智力加成，智力部分建議點滿。</p><p style="color:#6888a0;margin-top:6px">如還有問題，歡迎大群詢問。— <span style="color:#c8a040">清楓</span></p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- EQUIP -->
+    <div id="page-equip" style="display:none">
+      <div class="pnl">
+        <div class="pnl-h"><h2>🛡️ 道具資料庫</h2></div>
+        <div class="pnl-b">
+          <!-- 特殊裝備 -->
+          <div class="pnl" style="margin-bottom:10px">
+            <div class="pnl-h" style="background:linear-gradient(90deg,#0a1a2a,#050e18)"><h2>🌀 特殊裝備</h2></div>
+            <div class="pnl-b" style="display:flex;flex-direction:column;gap:8px">
+              <div style="background:#040c18;border:1px solid #4466cc44;border-left:3px solid #4466cc;padding:12px"><div style="color:#88aaff;font-weight:bold;margin-bottom:6px">🌀 深淵廢器</div><div style="color:#3a5068;font-size:11px;margin-bottom:6px">防禦 0+0 ／ 所有職業 ／ 無法強化 ／ 材質：寶石</div><div style="color:#6888a0;font-size:12px;line-height:2">額外攻擊+5 ／ 遠距離攻擊力+5<br>力量/敏捷/體質/精神/智力/魅力 <span style="color:#44cc66">+3</span><br>體力上限 <span style="color:#ff4444">+1000</span> ／ 魔力上限 <span style="color:#8888ff">+1000</span> ／ 魔力回復量 20 ／ 魔攻 <span style="color:#cc88ff">+3</span><br>狩獵經驗值 <span style="color:#ffcc44">+100</span> ／ 藥水回復量 <span style="color:#44cc66">+10%</span></div></div>
+              <div style="background:#040c18;border:1px solid #c8942844;border-left:3px solid #ffcc44;padding:12px"><div style="color:#f0c060;font-weight:bold;margin-bottom:6px">👑 傲慢的遺物</div><div style="color:#3a5068;font-size:11px;margin-bottom:6px">防禦 0+0 ／ 所有職業 ／ 無法強化 ／ 材質：寶石</div><div style="color:#6888a0;font-size:12px;line-height:2">額外攻擊+5 ／ 遠距離攻擊力+5<br>力量/敏捷/體質/精神/智力/魅力 <span style="color:#44cc66">+3</span><br>體力上限 <span style="color:#ff4444">+1000</span> ／ 魔力上限 <span style="color:#8888ff">+1000</span> ／ 魔力回復量 20 ／ 魔攻 <span style="color:#cc88ff">+3</span><br>狩獵經驗值 <span style="color:#ffcc44">+100</span> ／ 藥水回復量 <span style="color:#44cc66">+20%</span><br>魔武發動率+10 ／ 魔武增傷害+20<br>PVP傷害減免 <span style="color:#44cc66">+10</span> ／ PVP傷害增加 <span style="color:#ff4444">+10</span></div></div>
+            </div>
+          </div>
+          <!-- 符石升階 -->
+          <div class="pnl" style="margin-bottom:10px">
+            <div class="pnl-h" style="background:linear-gradient(90deg,#1a0a00,#0e0600)"><h2>⬆️ 符石升階系列</h2></div>
+            <div class="pnl-b" style="display:flex;flex-direction:column;gap:8px">
+              <div style="background:#040c18;border-left:3px solid #c89428;padding:10px 14px"><div style="color:#c8a040;font-weight:bold;margin-bottom:4px">📋 升階說明</div><div style="color:#6888a0;font-size:12px;line-height:2"><span style="color:#44aaff">貪婪之淵符石</span> → 進階 → <span style="color:#44cc66">嫉妒怨毒符石</span><br><span style="color:#c8a040">色慾之魅惑符石</span> → 進階 → <span style="color:#ffaa44">暴食飢渴符石</span></div></div>
+              <div style="background:#040c18;border:1px solid #4488cc44;border-left:3px solid #4488cc;padding:12px"><div style="color:#88aaff;font-weight:bold;margin-bottom:6px">🌊 貪婪之淵符石</div><div style="color:#3a5068;font-size:11px;margin-bottom:6px">防禦 0+0 ／ 所有職業 ／ 無法強化 ／ 材質：寶石</div><div style="color:#6888a0;font-size:12px;line-height:2">武器命中+2 ／ 額外攻擊+2 ／ 遠距離命中+5 ／ 遠距離攻擊力+5<br>力量/敏捷/體質/精神/智力/魅力 <span style="color:#44cc66">+2</span><br>體力上限 <span style="color:#ff4444">+500</span> ／ 魔力上限 <span style="color:#8888ff">+500</span> ／ 魔攻 <span style="color:#cc88ff">+2</span><br>狩獵經驗值 <span style="color:#ffcc44">+100</span> ／ 藥水回復量 <span style="color:#44cc66">+5%</span></div></div>
+              <div style="background:#040c18;border:1px solid #44aa4444;border-left:3px solid #44aa44;padding:12px"><div style="color:#88cc66;font-weight:bold;margin-bottom:6px">☠️ 嫉妒怨毒符石 <span style="color:#3a5068;font-size:11px">（貪婪之淵 進階）</span></div><div style="color:#3a5068;font-size:11px;margin-bottom:6px">防禦 0+0 ／ 所有職業 ／ 無法強化 ／ 材質：寶石</div><div style="color:#6888a0;font-size:12px;line-height:2">武器命中+5 ／ 遠距離命中+5 ／ 遠距離攻擊力+5<br>力量/敏捷/體質/精神/智力/魅力 <span style="color:#44cc66">+4</span><br>體力上限 <span style="color:#ff4444">+1000</span> ／ 魔力上限 <span style="color:#8888ff">+1000</span> ／ 魔攻 <span style="color:#cc88ff">+4</span><br>狩獵經驗值 <span style="color:#ffcc44">+100</span> ／ 藥水回復量 <span style="color:#44cc66">+10%</span></div></div>
+              <div style="background:#040c18;border:1px solid #c8942844;border-left:3px solid #c89428;padding:12px"><div style="color:#c8a040;font-weight:bold;margin-bottom:6px">✨ 色慾之魅惑符石</div><div style="color:#3a5068;font-size:11px;margin-bottom:6px">防禦 0+0 ／ 所有職業 ／ 無法強化 ／ 材質：寶石</div><div style="color:#6888a0;font-size:12px;line-height:2">武器命中+2 ／ 額外攻擊+2 ／ 遠距離命中+5 ／ 遠距離攻擊力+5<br>力量/敏捷/體質/精神/智力/魅力 <span style="color:#44cc66">+2</span><br>體力上限 <span style="color:#ff4444">+500</span> ／ 魔力上限 <span style="color:#8888ff">+500</span><br>狩獵經驗值 <span style="color:#ffcc44">+100</span> ／ 藥水回復量 <span style="color:#44cc66">+5%</span></div></div>
+              <div style="background:#040c18;border:1px solid #cc660044;border-left:3px solid #cc6600;padding:12px"><div style="color:#ffaa44;font-weight:bold;margin-bottom:6px">🦅 暴食飢渴符石 <span style="color:#3a5068;font-size:11px">（色慾之魅惑 進階）</span></div><div style="color:#3a5068;font-size:11px;margin-bottom:6px">防禦 0+0 ／ 所有職業 ／ 無法強化 ／ 材質：寶石</div><div style="color:#6888a0;font-size:12px;line-height:2">武器命中+5 ／ 鎧外攻擊+5 ／ 遠距離命中+5 ／ 遠距離攻擊力+5<br>力量/敏捷/體質/精神/智力/魅力 <span style="color:#44cc66">+4</span><br>體力上限 <span style="color:#ff4444">+1000</span> ／ 魔力上限 <span style="color:#8888ff">+1000</span> ／ 魔攻 <span style="color:#cc88ff">+4</span><br>狩獵經驗值 <span style="color:#ffcc44">+100</span> ／ 藥水回復量 <span style="color:#44cc66">+10%</span></div></div>
+            </div>
+          </div>
+          <div class="pnl" style="margin-bottom:0">
+            <div class="pnl-h" style="background:linear-gradient(90deg,#0a001a,#060010)"><h2>⬆️ 肩甲升階系列</h2></div>
+            <div class="pnl-b">
+              <div style="background:#040c18;border-left:3px solid #c89428;padding:12px;margin-bottom:10px"><div style="color:#c8a040;font-weight:bold;margin-bottom:6px">📋 升階流程</div><div style="color:#6888a0;font-size:12px;line-height:2"><span style="color:#ff8844">暴怒魔龍護肩</span> → 進階 → <span style="color:#cc88ff">混沌哀嚎肩甲</span> → 進階 → <span style="color:#ffcc44">滅世魔神肩胛</span><br>左右肩甲各自獨立升階，<span style="color:#ffcc44">最終形態為滅世魔神肩胛</span>。<br><span style="color:#ff4444">全系列無法強化 ／ 材質：寶石</span></div></div>
+              <div style="display:flex;flex-direction:column;gap:8px">
+                <div style="background:#1a0800;border:1px solid #cc660044;border-left:3px solid #ff8844;padding:12px"><div style="color:#ff8844;font-weight:bold;margin-bottom:6px">🔥 暴怒魔龍護肩（初階）左 / 右</div><div style="color:#6888a0;font-size:12px;line-height:2">力量+3 ／ 敏捷+3 ／ 智力+3<br>體力上限 <span style="color:#ff4444">+400</span> ／ 魔力上限 <span style="color:#8888ff">+400</span> ／ 魔攻 <span style="color:#cc88ff">+3</span><br>狩獵經驗值 <span style="color:#ffcc44">+50</span>（左右相同）／ 無法交易</div></div>
+                <div style="background:#0e0018;border:1px solid #cc88ff44;border-left:3px solid #cc88ff;padding:12px"><div style="color:#cc88ff;font-weight:bold;margin-bottom:6px">🌀 混沌哀嚎肩甲（中階）左 / 右</div><div style="color:#6888a0;font-size:12px;line-height:2">力量+6 ／ 敏捷+6 ／ 智力+6<br>體力上限 <span style="color:#ff4444">+800</span> ／ 魔力上限 <span style="color:#8888ff">+800</span> ／ 魔攻 <span style="color:#cc88ff">+6</span><br>狩獵經驗值：左 <span style="color:#ffcc44">+100</span> ／ 右 <span style="color:#ff4444">-106%</span></div></div>
+                <div style="background:#1a1000;border:1px solid #c8942844;border-left:3px solid #ffcc44;padding:12px"><div style="color:#ffcc44;font-weight:bold;margin-bottom:6px">👑 滅世魔神肩胛（最終階）左 / 右</div><div style="color:#6888a0;font-size:12px;line-height:2">力量+9 ／ 敏捷+9 ／ 智力+9<br>體力上限 <span style="color:#ff4444">+1600</span> ／ 魔力上限 <span style="color:#8888ff">+1600</span> ／ 魔攻 <span style="color:#cc88ff">+6</span><br>狩獵經驗值：左 <span style="color:#ffcc44">+150</span> ／ 右 <span style="color:#ff4444">-106%</span></div></div>
+              </div>
+              <div style="margin-top:8px;font-size:11px;color:#2a4060">※ 左右肩甲通常各配一件：左肩提升狩獵經驗，右肩滅世魔神階需注意經驗懲罰。</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- COLOR -->
+    <div id="page-color" style="display:none">
+      <div class="pnl">
+        <div class="pnl-h"><h2>🎨 炫色資料庫</h2></div>
+        <div class="pnl-b">
+
+          <!-- 武器炫色石 -->
+          <div class="pnl" style="margin-bottom:10px">
+            <div class="pnl-h" style="background:linear-gradient(90deg,#1a0800,#0e0400)"><h2>⚔️ 武器炫彩石能力值一覽表</h2></div>
+            <div class="pnl-b" style="padding:6px;overflow-x:auto">
+              <div style="background:#040c18;border-left:3px solid #c89428;padding:8px 14px;margin-bottom:8px;font-size:11px;color:#6888a0">
+                ※ 欄位說明：<span style="color:#ff8844">近攻</span>＝近武攻擊力　<span style="color:#ff8844">遠攻</span>＝鎧外攻擊力　<span style="color:#ffcc44">命中</span>＝近戰命中　<span style="color:#cc88ff">魔攻</span>＝魔法攻擊　「-」表示無加成
+              </div>
+              <table style="width:100%;border-collapse:collapse;font-size:11px;min-width:900px" id="tbl-weapon-color">
+                <thead><tr>
+                  <th style="background:#0a1e3c;color:#c8a040;padding:5px 8px;border:1px solid #0c1c30;text-align:center">項次</th>
+                  <th style="background:#0a1e3c;color:#c8a040;padding:5px 8px;border:1px solid #0c1c30;text-align:center">顏色</th>
+                  <th style="background:#0a1e3c;color:#6888a0;padding:5px 8px;border:1px solid #0c1c30;text-align:center">武器類別</th>
+                  <th style="background:#0a1e3c;color:#ff8844;padding:5px 8px;border:1px solid #0c1c30;text-align:center">最小攻擊</th>
+                  <th style="background:#0a1e3c;color:#ff8844;padding:5px 8px;border:1px solid #0c1c30;text-align:center">最大攻擊</th>
+                  <th style="background:#0a1e3c;color:#ffcc44;padding:5px 8px;border:1px solid #0c1c30;text-align:center">命中</th>
+                  <th style="background:#0a1e3c;color:#ff8844;padding:5px 8px;border:1px solid #0c1c30;text-align:center">鎧外攻擊</th>
+                  <th style="background:#0a1e3c;color:#ffcc44;padding:5px 8px;border:1px solid #0c1c30;text-align:center">力量</th>
+                  <th style="background:#0a1e3c;color:#ffcc44;padding:5px 8px;border:1px solid #0c1c30;text-align:center">魅力</th>
+                  <th style="background:#0a1e3c;color:#ffcc44;padding:5px 8px;border:1px solid #0c1c30;text-align:center">敏捷</th>
+                  <th style="background:#0a1e3c;color:#ffcc44;padding:5px 8px;border:1px solid #0c1c30;text-align:center">智力</th>
+                  <th style="background:#0a1e3c;color:#ffcc44;padding:5px 8px;border:1px solid #0c1c30;text-align:center">精神</th>
+                  <th style="background:#0a1e3c;color:#ff4444;padding:5px 8px;border:1px solid #0c1c30;text-align:center">血量</th>
+                  <th style="background:#0a1e3c;color:#cc88ff;padding:5px 8px;border:1px solid #0c1c30;text-align:center">魔攻</th>
+                  <th style="background:#0a1e3c;color:#44cc66;padding:5px 8px;border:1px solid #0c1c30;text-align:center">最小吸魔</th>
+                  <th style="background:#0a1e3c;color:#44cc66;padding:5px 8px;border:1px solid #0c1c30;text-align:center">最大吸魔</th>
+                  <th style="background:#0a1e3c;color:#44aaff;padding:5px 8px;border:1px solid #0c1c30;text-align:center">吸魔機率</th>
+                  <th style="background:#0a1e3c;color:#cc88ff;padding:5px 8px;border:1px solid #0c1c30;text-align:center">魔法傷害</th>
+                  <th style="background:#0a1e3c;color:#44cc66;padding:5px 8px;border:1px solid #0c1c30;text-align:center">物理格擋</th>
+                  <th style="background:#0a1e3c;color:#44cc66;padding:5px 8px;border:1px solid #0c1c30;text-align:center">魔法格擋</th>
+                  <th style="background:#0a1e3c;color:#ff4444;padding:5px 8px;border:1px solid #0c1c30;text-align:center">PVP增傷</th>
+                  <th style="background:#0a1e3c;color:#44cc66;padding:5px 8px;border:1px solid #0c1c30;text-align:center">PVP減傷</th>
+                </tr></thead>
+                <tbody id="tb-weapon-color"></tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- 防具炫色石 -->
+          <div class="pnl" style="margin-bottom:0">
+            <div class="pnl-h" style="background:linear-gradient(90deg,#001a2a,#000e18)"><h2>🛡️ 防具炫彩石能力值一覽表</h2></div>
+            <div class="pnl-b" style="padding:6px;overflow-x:auto">
+              <table style="width:100%;border-collapse:collapse;font-size:11px;min-width:800px">
+                <thead><tr>
+                  <th style="background:#0a1e3c;color:#c8a040;padding:5px 8px;border:1px solid #0c1c30;text-align:center">項目</th>
+                  <th style="background:#0a1e3c;color:#c8a040;padding:5px 8px;border:1px solid #0c1c30;text-align:center">顏色</th>
+                  <th style="background:#0a1e3c;color:#6888a0;padding:5px 8px;border:1px solid #0c1c30;text-align:center">部位</th>
+                  <th style="background:#0a1e3c;color:#ff8844;padding:5px 8px;border:1px solid #0c1c30;text-align:center">鎧外攻擊</th>
+                  <th style="background:#0a1e3c;color:#ff4444;padding:5px 8px;border:1px solid #0c1c30;text-align:center">血量</th>
+                  <th style="background:#0a1e3c;color:#8888ff;padding:5px 8px;border:1px solid #0c1c30;text-align:center">魔力</th>
+                  <th style="background:#0a1e3c;color:#ffcc44;padding:5px 8px;border:1px solid #0c1c30;text-align:center">魅力</th>
+                  <th style="background:#0a1e3c;color:#cc88ff;padding:5px 8px;border:1px solid #0c1c30;text-align:center">魔攻</th>
+                  <th style="background:#0a1e3c;color:#44cc66;padding:5px 8px;border:1px solid #0c1c30;text-align:center">魔防</th>
+                  <th style="background:#0a1e3c;color:#44cc66;padding:5px 8px;border:1px solid #0c1c30;text-align:center">魔法格擋</th>
+                  <th style="background:#0a1e3c;color:#ff4444;padding:5px 8px;border:1px solid #0c1c30;text-align:center">PVP增傷</th>
+                  <th style="background:#0a1e3c;color:#44cc66;padding:5px 8px;border:1px solid #0c1c30;text-align:center">PVP減傷</th>
+                  <th style="background:#0a1e3c;color:#44ff88;padding:5px 8px;border:1px solid #0c1c30;text-align:center">藥水回復</th>
+                </tr></thead>
+                <tbody id="tb-armor-color"></tbody>
+              </table>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- BONUS -->
+    <div id="page-bonus" style="display:none">
+      <div class="pnl">
+        <div class="pnl-h"><h2>⭐ 加成資料庫｜各職業轉生能力加成表</h2></div>
+        <div class="pnl-b">
+
+          <div style="background:#040c18;border:1px solid #c8942844;border-left:3px solid #c89428;padding:10px 14px;margin-bottom:12px">
+            <div style="color:#c8a040;font-weight:bold;margin-bottom:4px">📋 說明</div>
+            <div style="color:#6888a0;font-size:12px">全職業轉生後保留百分之 <span style="color:#ff4444;font-weight:bold">15</span> 血量。每轉額外加成依職業不同而有所差異。</div>
+          </div>
+
+          <!-- 王族、騎士 -->
+          <div class="pnl" style="margin-bottom:10px">
+            <div class="pnl-h" style="background:linear-gradient(90deg,#1a0800,#0e0400)"><h2>👑 王族、騎士</h2></div>
+            <div class="pnl-b" style="padding:6px;overflow-x:auto">
+              <table style="width:100%;border-collapse:collapse;font-size:12px;min-width:420px">
+                <thead><tr>
+                  <th style="background:#0a1e3c;color:#c8a040;padding:7px 12px;border:1px solid #0c1c30;text-align:center;font-family:'Cinzel',serif">轉數</th>
+                  <th style="background:#0a1e3c;color:#ff4444;padding:7px 12px;border:1px solid #0c1c30;text-align:center">額外血量</th>
+                  <th style="background:#0a1e3c;color:#8888ff;padding:7px 12px;border:1px solid #0c1c30;text-align:center">額外魔力</th>
+                  <th style="background:#0a1e3c;color:#ffcc44;padding:7px 12px;border:1px solid #0c1c30;text-align:center">力量</th>
+                  <th style="background:#0a1e3c;color:#44cc66;padding:7px 12px;border:1px solid #0c1c30;text-align:center">全傷害減免</th>
+                </tr></thead>
+                <tbody id="tb-knight"></tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- 妖精 -->
+          <div class="pnl" style="margin-bottom:10px">
+            <div class="pnl-h" style="background:linear-gradient(90deg,#0a2200,#061400)"><h2>🏹 妖精</h2></div>
+            <div class="pnl-b" style="padding:6px;overflow-x:auto">
+              <table style="width:100%;border-collapse:collapse;font-size:12px;min-width:500px">
+                <thead><tr>
+                  <th style="background:#0a1e3c;color:#c8a040;padding:7px 12px;border:1px solid #0c1c30;text-align:center;font-family:'Cinzel',serif">轉數</th>
+                  <th style="background:#0a1e3c;color:#ff4444;padding:7px 12px;border:1px solid #0c1c30;text-align:center">額外血量</th>
+                  <th style="background:#0a1e3c;color:#8888ff;padding:7px 12px;border:1px solid #0c1c30;text-align:center">額外魔力</th>
+                  <th style="background:#0a1e3c;color:#ffcc44;padding:7px 12px;border:1px solid #0c1c30;text-align:center">力量</th>
+                  <th style="background:#0a1e3c;color:#44aaff;padding:7px 12px;border:1px solid #0c1c30;text-align:center">敏捷</th>
+                  <th style="background:#0a1e3c;color:#44cc66;padding:7px 12px;border:1px solid #0c1c30;text-align:center">遠距離命中、傷害</th>
+                </tr></thead>
+                <tbody id="tb-elf"></tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- 法師、幻術師 -->
+          <div class="pnl" style="margin-bottom:10px">
+            <div class="pnl-h" style="background:linear-gradient(90deg,#0a0a2a,#060618)"><h2>🔮 法師、幻術師</h2></div>
+            <div class="pnl-b" style="padding:6px;overflow-x:auto">
+              <table style="width:100%;border-collapse:collapse;font-size:12px;min-width:500px">
+                <thead><tr>
+                  <th style="background:#0a1e3c;color:#c8a040;padding:7px 12px;border:1px solid #0c1c30;text-align:center;font-family:'Cinzel',serif">轉數</th>
+                  <th style="background:#0a1e3c;color:#ff4444;padding:7px 12px;border:1px solid #0c1c30;text-align:center">額外血量</th>
+                  <th style="background:#0a1e3c;color:#8888ff;padding:7px 12px;border:1px solid #0c1c30;text-align:center">額外魔力</th>
+                  <th style="background:#0a1e3c;color:#ffcc44;padding:7px 12px;border:1px solid #0c1c30;text-align:center">智力</th>
+                  <th style="background:#0a1e3c;color:#cc88ff;padding:7px 12px;border:1px solid #0c1c30;text-align:center">魔攻</th>
+                  <th style="background:#0a1e3c;color:#ff8844;padding:7px 12px;border:1px solid #0c1c30;text-align:center">魔法傷害</th>
+                </tr></thead>
+                <tbody id="tb-mage"></tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- 黑妖、龍騎士 -->
+          <div class="pnl" style="margin-bottom:10px">
+            <div class="pnl-h" style="background:linear-gradient(90deg,#1a001a,#0e000e)"><h2>🌑 黑妖、龍騎士</h2></div>
+            <div class="pnl-b" style="padding:6px;overflow-x:auto">
+              <table style="width:100%;border-collapse:collapse;font-size:12px;min-width:500px">
+                <thead><tr>
+                  <th style="background:#0a1e3c;color:#c8a040;padding:7px 12px;border:1px solid #0c1c30;text-align:center;font-family:'Cinzel',serif">轉數</th>
+                  <th style="background:#0a1e3c;color:#ff4444;padding:7px 12px;border:1px solid #0c1c30;text-align:center">額外血量</th>
+                  <th style="background:#0a1e3c;color:#8888ff;padding:7px 12px;border:1px solid #0c1c30;text-align:center">額外魔力</th>
+                  <th style="background:#0a1e3c;color:#ffcc44;padding:7px 12px;border:1px solid #0c1c30;text-align:center">力量</th>
+                  <th style="background:#0a1e3c;color:#44cc66;padding:7px 12px;border:1px solid #0c1c30;text-align:center">近距離命中、傷害</th>
+                </tr></thead>
+                <tbody id="tb-dark"></tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- 血盟升級 -->
+          <div class="pnl" style="margin-bottom:10px">
+            <div class="pnl-h" style="background:linear-gradient(90deg,#1a0a00,#0e0600)"><h2>⚔️ 血盟升級加成能力</h2></div>
+            <div class="pnl-b" style="padding:6px;overflow-x:auto">
+              <table style="width:100%;border-collapse:collapse;font-size:12px;min-width:500px">
+                <thead><tr>
+                  <th style="background:#0a1e3c;color:#c8a040;padding:7px 12px;border:1px solid #0c1c30;text-align:center;font-family:'Cinzel',serif">血盟等級</th>
+                  <th style="background:#0a1e3c;color:#ffcc44;padding:7px 12px;border:1px solid #0c1c30;text-align:center">力／敏／智</th>
+                  <th style="background:#0a1e3c;color:#ff8844;padding:7px 12px;border:1px solid #0c1c30;text-align:center">近遠傷</th>
+                  <th style="background:#0a1e3c;color:#cc88ff;padding:7px 12px;border:1px solid #0c1c30;text-align:center">魔功</th>
+                  <th style="background:#0a1e3c;color:#44cc66;padding:7px 12px;border:1px solid #0c1c30;text-align:center">物魔減傷</th>
+                  <th style="background:#0a1e3c;color:#ff4444;padding:7px 12px;border:1px solid #0c1c30;text-align:center">血量</th>
+                </tr></thead>
+                <tbody id="tb-clan"></tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- 裝備過安定 -->
+          <div class="pnl" style="margin-bottom:0">
+            <div class="pnl-h" style="background:linear-gradient(90deg,#001a2a,#000e18)"><h2>🛡️ 裝備過安定加成能力</h2></div>
+            <div class="pnl-b" style="padding:6px;overflow-x:auto">
+              <table style="width:100%;border-collapse:collapse;font-size:12px;min-width:500px">
+                <thead><tr>
+                  <th style="background:#0a1e3c;color:#c8a040;padding:7px 12px;border:1px solid #0c1c30;text-align:center;font-family:'Cinzel',serif">項次</th>
+                  <th style="background:#0a1e3c;color:#ffcc44;padding:7px 12px;border:1px solid #0c1c30;text-align:center">安定</th>
+                  <th style="background:#0a1e3c;color:#44cc66;padding:7px 12px;border:1px solid #0c1c30;text-align:center">物理減傷</th>
+                  <th style="background:#0a1e3c;color:#cc88ff;padding:7px 12px;border:1px solid #0c1c30;text-align:center">魔法減傷</th>
+                  <th style="background:#0a1e3c;color:#ff4444;padding:7px 12px;border:1px solid #0c1c30;text-align:center">血量</th>
+                  <th style="background:#0a1e3c;color:#8888ff;padding:7px 12px;border:1px solid #0c1c30;text-align:center">魔力</th>
+                </tr></thead>
+                <tbody id="tb-equip-stab"></tbody>
+              </table>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- WEAPON -->
+    <div id="page-weapon" style="display:none">
+      <div class="pnl">
+        <div class="pnl-h"><h2>⚔️ 武器資料庫</h2></div>
+        <div class="pnl-b" style="display:flex;flex-direction:column;gap:10px">
+          <div style="background:#040c18;border-left:3px solid #c89428;padding:10px 14px"><div style="color:#c8a040;font-weight:bold;margin-bottom:4px">📋 武器等級進階</div><div style="color:#6888a0;font-size:12px"><span style="color:#44aaff">稀有</span> → <span style="color:#ff4444">英雄</span> → <span style="color:#cc88ff">傳說</span> → <span style="color:#ffcc44">神話</span> → <span style="color:#ff6600">龍武</span></div><div style="color:#6888a0;font-size:12px;margin-top:4px"><span style="color:#8888cc">魔族隱藏</span> — 獨立系列，無法進階</div></div>
+          <div class="pnl" style="margin-bottom:0"><div class="pnl-h" style="background:linear-gradient(90deg,#1a1030,#0a0818)"><h2 style="color:#8888cc">🌑 魔族隱藏武器</h2></div><div style="overflow-x:auto"><table class="tbl" style="min-width:520px"><thead><tr><th>武器名稱</th><th style="text-align:center">小怪</th><th style="text-align:center">大怪</th><th>屬性加成</th></tr></thead><tbody>
+            <tr><td style="color:#c8d0e0;white-space:nowrap">魔族之劍</td><td class="dc">12</td><td class="dc">12</td><td style="color:#6888a0;font-size:11px">命中+3 ／ HP+30</td></tr>
+            <tr><td style="color:#c8d0e0;white-space:nowrap">魔族弓箭</td><td class="dc">2</td><td class="dc">2</td><td style="color:#6888a0;font-size:11px">命中+3 ／ 攻擊+6</td></tr>
+            <tr><td style="color:#c8d0e0;white-space:nowrap">魔族魔杖</td><td class="dc">15</td><td class="dc">16</td><td style="color:#6888a0;font-size:11px">命中+4 ／ 回魔+3 ／ 魔攻+1</td></tr>
+            <tr><td style="color:#c8d0e0;white-space:nowrap">魔族鋼爪</td><td class="dc">24</td><td class="dc">26</td><td style="color:#6888a0;font-size:11px">命中+3</td></tr>
+            <tr><td style="color:#c8d0e0;white-space:nowrap">魔族鎖鏈劍</td><td class="dc">25</td><td class="dc">28</td><td style="color:#6888a0;font-size:11px">命中+8 ／ 攻擊+1</td></tr>
+            <tr><td style="color:#c8d0e0;white-space:nowrap">魔族奇古獸</td><td class="dc">28</td><td class="dc">28</td><td style="color:#6888a0;font-size:11px">命中+3 ／ 回魔+1 ／ 魔攻+1</td></tr>
+          </tbody></table></div></div>
+          <div class="pnl" style="margin-bottom:0"><div class="pnl-h" style="background:linear-gradient(90deg,#0a1a30,#061220)"><h2 style="color:#44aaff">🔵 稀有武器</h2></div><div style="overflow-x:auto"><table class="tbl" style="min-width:520px"><thead><tr><th>武器名稱</th><th style="text-align:center">小怪</th><th style="text-align:center">大怪</th><th>屬性加成</th></tr></thead><tbody>
+            <tr><td style="color:#c8d0e0;white-space:nowrap">戰神馬爾斯小刀</td><td class="dc">17</td><td class="dc">17</td><td style="color:#6888a0;font-size:11px">命中+4 ／ 攻擊+4 ／ 力量+1</td></tr>
+            <tr><td style="color:#c8d0e0;white-space:nowrap">戰神馬爾斯神弓</td><td class="dc">4</td><td class="dc">4</td><td style="color:#6888a0;font-size:11px">命中+4 ／ 攻擊+7 ／ 敏捷+1</td></tr>
+            <tr><td style="color:#c8d0e0;white-space:nowrap">戰神馬爾斯雙手劍</td><td class="dc">20</td><td class="dc">24</td><td style="color:#6888a0;font-size:11px">命中+6 ／ 攻擊+6 ／ 力量+1</td></tr>
+            <tr><td style="color:#c8d0e0;white-space:nowrap">戰神馬爾斯雙刀</td><td class="dc">19</td><td class="dc">18</td><td style="color:#6888a0;font-size:11px">命中+2 ／ 攻擊+4 ／ 力量+1</td></tr>
+            <tr><td style="color:#c8d0e0;white-space:nowrap">戰神馬爾斯法杖</td><td class="dc">10</td><td class="dc">10</td><td style="color:#6888a0;font-size:11px">攻擊+3 ／ 智力+1 ／ 回魔+5 ／ 魔攻+1</td></tr>
+            <tr><td style="color:#c8d0e0;white-space:nowrap">戰神馬爾斯奇古獸</td><td class="dc">22</td><td class="dc">25</td><td style="color:#6888a0;font-size:11px">智力+1 ／ 魔攻+2</td></tr>
+            <tr><td style="color:#c8d0e0;white-space:nowrap">戰神馬爾斯鎖鏈劍</td><td class="dc">26</td><td class="dc">26</td><td style="color:#6888a0;font-size:11px">命中+6 ／ 攻擊+5 ／ 力量+1</td></tr>
+          </tbody></table></div></div>
+          <div class="pnl" style="margin-bottom:0"><div class="pnl-h" style="background:linear-gradient(90deg,#2a0a0a,#1a0606)"><h2 style="color:#ff4444">🔴 英雄武器</h2></div><div style="overflow-x:auto"><table class="tbl" style="min-width:520px"><thead><tr><th>武器名稱</th><th style="text-align:center">小怪</th><th style="text-align:center">大怪</th><th>屬性加成</th></tr></thead><tbody>
+            <tr><td style="color:#c8d0e0;white-space:nowrap">火神赫發斯特斯雙刀</td><td class="dc">23</td><td class="dc">20</td><td style="color:#6888a0;font-size:11px">攻擊+3 ／ 力量+3 ／ 體質+1 ／ 智力+1</td></tr>
+            <tr><td style="color:#c8d0e0;white-space:nowrap">火神赫發斯特斯鎖鏈劍</td><td class="dc">30</td><td class="dc">30</td><td style="color:#6888a0;font-size:11px">攻擊+6 ／ 力量+3 ／ 體質+1 ／ 智力+1</td></tr>
+            <tr><td style="color:#c8d0e0;white-space:nowrap">火神赫發斯特斯奇古獸</td><td class="dc">26</td><td class="dc">31</td><td style="color:#6888a0;font-size:11px">智力+2 ／ 精神+1 ／ 魔攻+7 ／ 魔防+1</td></tr>
+            <tr><td style="color:#c8d0e0;white-space:nowrap">火神赫發斯特斯短劍</td><td class="dc">22</td><td class="dc">22</td><td style="color:#6888a0;font-size:11px">攻擊+4 ／ 力量+3 ／ 體質+1 ／ 智力+1</td></tr>
+            <tr><td style="color:#c8d0e0;white-space:nowrap">火神赫發斯特斯雙手劍</td><td class="dc">24</td><td class="dc">26</td><td style="color:#6888a0;font-size:11px">攻擊+6 ／ 力量+5 ／ 體質+1 ／ 智力+1</td></tr>
+            <tr><td style="color:#c8d0e0;white-space:nowrap">火神赫發斯特斯法杖</td><td class="dc">12</td><td class="dc">12</td><td style="color:#6888a0;font-size:11px">攻擊+4 ／ 力量+3 ／ 智力+3 ／ 精神+1 ／ 魔攻+7 ／ 魔防+1</td></tr>
+            <tr><td style="color:#c8d0e0;white-space:nowrap">火神赫發斯特斯神弓</td><td class="dc">7</td><td class="dc">7</td><td style="color:#6888a0;font-size:11px">攻擊+3 ／ 敏捷+4 ／ 智力+2 ／ 精神+2</td></tr>
+            <tr><td style="color:#c8d0e0;white-space:nowrap">火神赫發斯特斯巨斧</td><td class="dc">27</td><td class="dc">30</td><td style="color:#6888a0;font-size:11px">命中+1 ／ 攻擊+5 ／ 力量+7 ／ 體質+2</td></tr>
+          </tbody></table></div></div>
+          <div class="pnl" style="margin-bottom:0"><div class="pnl-h" style="background:linear-gradient(90deg,#1a0a2a,#100618)"><h2 style="color:#cc88ff">🟣 傳說武器</h2></div><div style="overflow-x:auto"><table class="tbl" style="min-width:520px"><thead><tr><th>武器名稱</th><th style="text-align:center">小怪</th><th style="text-align:center">大怪</th><th>屬性加成</th></tr></thead><tbody>
+            <tr><td style="color:#c8d0e0;white-space:nowrap">惡魔王鎖鏈劍</td><td class="dc">34</td><td class="dc">34</td><td style="color:#6888a0;font-size:11px">命中+1 ／ 攻擊+3 ／ 力量+5 ／ 體質+2 ／ 智力+2</td></tr>
+            <tr><td style="color:#c8d0e0;white-space:nowrap">惡魔王奇古獸</td><td class="dc">29</td><td class="dc">34</td><td style="color:#6888a0;font-size:11px">命中+1 ／ 攻擊+3 ／ 智力+4 ／ 精神+1 ／ 魔攻+7</td></tr>
+            <tr><td style="color:#c8d0e0;white-space:nowrap">惡魔王矛</td><td class="dc">25</td><td class="dc">25</td><td style="color:#6888a0;font-size:11px">命中+2 ／ 攻擊+3</td></tr>
+            <tr><td style="color:#c8d0e0;white-space:nowrap">惡魔王雙刀</td><td class="dc">27</td><td class="dc">24</td><td style="color:#6888a0;font-size:11px">命中+5 ／ 攻擊+3 ／ 力量+5 ／ 敏捷+1 ／ 智力+1</td></tr>
+            <tr><td style="color:#c8d0e0;white-space:nowrap">惡魔王雙手劍</td><td class="dc">26</td><td class="dc">28</td><td style="color:#6888a0;font-size:11px">命中+1 ／ 攻擊+5 ／ 力量+5 ／ 體質+2</td></tr>
+            <tr><td style="color:#c8d0e0;white-space:nowrap">惡魔王魔杖</td><td class="dc">14</td><td class="dc">14</td><td style="color:#6888a0;font-size:11px">命中+6 ／ 攻擊+2 ／ 智力+5 ／ 精神+3 ／ 回魔+100 ／ 魔攻+7</td></tr>
+            <tr><td style="color:#c8d0e0;white-space:nowrap">惡魔王弓</td><td class="dc">10</td><td class="dc">10</td><td style="color:#6888a0;font-size:11px">命中+4 ／ 攻擊+6 ／ 敏捷+7 ／ 智力+3 ／ 精神+3</td></tr>
+            <tr><td style="color:#c8d0e0;white-space:nowrap">惡魔王小刀</td><td class="dc">27</td><td class="dc">27</td><td style="color:#6888a0;font-size:11px">命中+3 ／ 攻擊+14 ／ 力量+6 ／ 敏捷+2 ／ 智力+2</td></tr>
+          </tbody></table></div></div>
+          <div class="pnl" style="margin-bottom:0"><div class="pnl-h" style="background:linear-gradient(90deg,#2a2000,#1a1400)"><h2 style="color:#ffcc44">🟡 神話武器</h2></div><div style="overflow-x:auto"><table class="tbl" style="min-width:520px"><thead><tr><th>武器名稱</th><th style="text-align:center">小怪</th><th style="text-align:center">大怪</th><th>屬性加成</th></tr></thead><tbody>
+            <tr><td style="color:#c8d0e0;white-space:nowrap">真。英雄之雙手劍</td><td class="dc">28</td><td class="dc">30</td><td style="color:#6888a0;font-size:11px">命中+4 ／ 攻擊+20 ／ 力量+6 ／ 體質+3 ／ 智力+3</td></tr>
+            <tr><td style="color:#c8d0e0;white-space:nowrap">真。英雄之弓</td><td class="dc">12</td><td class="dc">12</td><td style="color:#6888a0;font-size:11px">命中+8 ／ 攻擊+24 ／ 敏捷+9 ／ 智力+3 ／ 精神+3 ／ 魔攻+3</td></tr>
+            <tr><td style="color:#c8d0e0;white-space:nowrap">真。英雄之魔杖</td><td class="dc">16</td><td class="dc">16</td><td style="color:#6888a0;font-size:11px">命中+1 ／ 攻擊+3 ／ 智力+6 ／ 精神+3 ／ 回魔+100 ／ 魔攻+10</td></tr>
+            <tr><td style="color:#c8d0e0;white-space:nowrap">真。英雄短劍</td><td class="dc">20</td><td class="dc">10</td><td style="color:#6888a0;font-size:11px">命中+3 ／ 攻擊+14 ／ HP+100</td></tr>
+            <tr><td style="color:#c8d0e0;white-space:nowrap">真。英雄單手劍</td><td class="dc">32</td><td class="dc">30</td><td style="color:#6888a0;font-size:11px">命中+7 ／ 攻擊+15 ／ 力量+6 ／ 敏捷+3 ／ 智力+3</td></tr>
+            <tr><td style="color:#c8d0e0;white-space:nowrap">真。英雄雙刀</td><td class="dc">31</td><td class="dc">27</td><td style="color:#6888a0;font-size:11px">命中+8 ／ 攻擊+19 ／ 力量+6 ／ 敏捷+1 ／ 智力+1</td></tr>
+            <tr><td style="color:#c8d0e0;white-space:nowrap">真。英雄鎖鏈劍</td><td class="dc">36</td><td class="dc">36</td><td style="color:#6888a0;font-size:11px">命中+10 ／ 攻擊+20 ／ 力量+6 ／ 體質+3 ／ 智力+3</td></tr>
+            <tr><td style="color:#c8d0e0;white-space:nowrap">真。英雄奇古獸</td><td class="dc">33</td><td class="dc">36</td><td style="color:#6888a0;font-size:11px">攻擊+15 ／ 智力+6 ／ 精神+2 ／ 回魔+15 ／ 魔攻+10</td></tr>
+          </tbody></table></div></div>
+          <div class="pnl" style="margin-bottom:0"><div class="pnl-h" style="background:linear-gradient(90deg,#2a1200,#1a0c00)"><h2 style="color:#ff6600">🔥 龍武</h2></div><div style="overflow-x:auto"><table class="tbl" style="min-width:520px"><thead><tr><th>武器名稱</th><th style="text-align:center">小怪</th><th style="text-align:center">大怪</th><th>屬性加成</th></tr></thead><tbody>
+            <tr><td style="color:#c8d0e0;white-space:nowrap">大地女神的激怒（弓箭系列）</td><td class="dc">15</td><td class="dc">15</td><td style="color:#6888a0;font-size:11px">攻擊+28 ／ 敏捷+12 ／ 智力+5 ／ 精神+5 ／ 魔攻+5</td></tr>
+            <tr><td style="color:#c8d0e0;white-space:nowrap">克洛諾斯的恐怖（鎖鏈劍系列）</td><td class="dc">40</td><td class="dc">40</td><td style="color:#6888a0;font-size:11px">命中+10 ／ 攻擊+25 ／ 力量+10 ／ 體質+5 ／ 智力+5</td></tr>
+            <tr><td style="color:#c8d0e0;white-space:nowrap">海柏利昂的絕望（奇古獸系列）</td><td class="dc">36</td><td class="dc">40</td><td style="color:#6888a0;font-size:11px">攻擊+20 ／ 智力+10 ／ 精神+5 ／ 魔攻+15 ／ 魔防+3</td></tr>
+            <tr><td style="color:#c8d0e0;white-space:nowrap">真．冥皇執行劍（雙手劍系列）</td><td class="dc">35</td><td class="dc">39</td><td style="color:#6888a0;font-size:11px">攻擊+12 ／ 力量+21 ／ 體質+5 ／ 智力+3</td></tr>
+            <tr><td style="color:#c8d0e0;white-space:nowrap">紅影雙刀（雙刀系列）</td><td class="dc">34</td><td class="dc">31</td><td style="color:#6888a0;font-size:11px">攻擊+24 ／ 力量+10 ／ 敏捷+2 ／ 智力+2</td></tr>
+            <tr><td style="color:#c8d0e0;white-space:nowrap">屠龍劍（單手劍系列）</td><td class="dc">36</td><td class="dc">38</td><td style="color:#6888a0;font-size:11px">攻擊+20 ／ 力量+10 ／ 敏捷+6 ／ 智力+6</td></tr>
+            <tr><td style="color:#c8d0e0;white-space:nowrap">傑羅斯的魔杖（魔杖系列）</td><td class="dc">4</td><td class="dc">4</td><td style="color:#6888a0;font-size:11px">命中+5 ／ 攻擊+3 ／ 精神+1 ／ 魔攻+5</td></tr>
+          </tbody></table></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SKILL -->
+    <div id="page-skill" style="display:none">
+      <div class="pnl">
+        <div class="pnl-h"><h2>⚡ 金技資料庫</h2></div>
+        <div class="pnl-b" style="display:flex;flex-direction:column;gap:8px">
+          <div style="background:#040c18;border-left:3px solid #c89428;padding:10px 14px"><div style="color:#c8a040;font-weight:bold;margin-bottom:4px">📋 說明</div><div style="color:#6888a0;font-size:12px">每個職業各有2個金技，需使用傲幣商人購買對應封印書後學習。</div></div>
+          <!-- 王族 -->
+          <div class="pnl" style="margin-bottom:0">
+            <div class="pnl-h" style="background:linear-gradient(90deg,#2a1800,#1a0e00)"><h2>👑 王族金技</h2></div>
+            <div class="pnl-b" style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
+              <div style="background:#040c18;border:1px solid #c8942844;border-top:2px solid #c89428;padding:12px"><div style="font-family:'Cinzel',serif;color:#c8a040;font-size:.85rem;margin-bottom:6px">⚔️ 王者之劍</div><div style="color:#6888a0;font-size:.8rem;line-height:1.8">基礎傷害：<span style="color:#e8c050">20傷害 + 武器傷害</span><br>範圍暈眩最多 <span style="color:#e8c050">6個目標</span><br>命中：等級高60% ／ 相同50% ／ 低40%</div></div>
+              <div style="background:#040c18;border:1px solid #c8942844;border-top:2px solid #c89428;padding:12px"><div style="font-family:'Cinzel',serif;color:#c8a040;font-size:.85rem;margin-bottom:6px">🛡️ 帝國屏障</div><div style="color:#6888a0;font-size:.8rem;line-height:1.8">持續時間：<span style="color:#e8c050">2秒無敵</span><br>效果：<span style="color:#44cc66">所有傷害均無效</span><br>冷卻時間：<span style="color:#ffcc44">15秒</span></div></div>
+              <div style="background:#040c18;border:1px solid #c8942844;border-top:2px solid #c89428;padding:12px"><div style="font-family:'Cinzel',serif;color:#c8a040;font-size:.85rem;margin-bottom:6px">💛 王族之魂</div><div style="color:#6888a0;font-size:.8rem;line-height:1.8">持續時間：<span style="color:#e8c050">60秒</span><br>暴擊機率：<span style="color:#44cc66">+50%</span><br>暴擊傷害：<span style="color:#e8c050">×2.5倍</span><br>單次攻擊吸血：<span style="color:#ff4444">+500</span></div></div>
+            </div>
+          </div>
+          <!-- 妖精 -->
+          <div class="pnl" style="margin-bottom:0">
+            <div class="pnl-h" style="background:linear-gradient(90deg,#0a2200,#061400)"><h2>🏹 妖精金技</h2></div>
+            <div class="pnl-b" style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
+              <div style="background:#040c18;border:1px solid #44aa4444;border-top:2px solid #44aa44;padding:12px"><div style="font-family:'Cinzel',serif;color:#88cc66;font-size:.85rem;margin-bottom:6px">🌿 精靈首領</div><div style="color:#6888a0;font-size:.8rem;line-height:1.8">效果：<span style="color:#44cc66">可學習第二種屬性</span></div></div>
+              <div style="background:#040c18;border:1px solid #44aa4444;border-top:2px solid #44aa44;padding:12px"><div style="font-family:'Cinzel',serif;color:#88cc66;font-size:.85rem;margin-bottom:6px">🎯 重擊之矢</div><div style="color:#6888a0;font-size:.8rem;line-height:1.8">效果：時間內，第四次三重矢<br>額外增加 <span style="color:#e8c050">1.5倍傷害</span></div></div>
+              <div style="background:#040c18;border:1px solid #ff660044;border-top:2px solid #ff6600;padding:12px"><div style="font-family:'Cinzel',serif;color:#ff9944;font-size:.85rem;margin-bottom:6px">🔥 火靈附刃</div><div style="color:#6888a0;font-size:.8rem;line-height:1.8">持續時間：<span style="color:#e8c050">60秒</span><br>限定：<span style="color:#ffcc44">刀妖使用</span><br>每次攻擊額外火焰傷害<br><span style="color:#ff4444">×1.5～2.5倍（不等）</span></div></div>
+            </div>
+          </div>
+          <!-- 法師 -->
+          <div class="pnl" style="margin-bottom:0">
+            <div class="pnl-h" style="background:linear-gradient(90deg,#0a0a2a,#060618)"><h2>🔮 法師金技</h2></div>
+            <div class="pnl-b" style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
+              <div style="background:#040c18;border:1px solid #4444cc44;border-top:2px solid #4466cc;padding:12px"><div style="font-family:'Cinzel',serif;color:#88aaff;font-size:.85rem;margin-bottom:6px">💀 死亡治癒</div><div style="color:#6888a0;font-size:.8rem;line-height:1.8">效果：目標 <span style="color:#e8c050">5秒內</span>，喝水恢復量轉化為 <span style="color:#ff4444">傷害</span><br>命中率：<span style="color:#ffcc44">50%</span> ／ 冷卻：<span style="color:#ffcc44">15秒</span></div></div>
+              <div style="background:#040c18;border:1px solid #4444cc44;border-top:2px solid #4466cc;padding:12px"><div style="font-family:'Cinzel',serif;color:#88aaff;font-size:.85rem;margin-bottom:6px">✨ 全體聖結界</div><div style="color:#6888a0;font-size:.8rem;line-height:1.8">持續時間：<span style="color:#e8c050">30秒</span><br>全體傷害減免：<span style="color:#44cc66">+6</span> ／ PVP 傷害減免：<span style="color:#44cc66">+6</span></div></div>
+            </div>
+          </div>
+          <!-- 黑妖 -->
+          <div class="pnl" style="margin-bottom:0">
+            <div class="pnl-h" style="background:linear-gradient(90deg,#1a001a,#0e000e)"><h2>🌑 黑暗妖精金技</h2></div>
+            <div class="pnl-b" style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
+              <div style="background:#040c18;border:1px solid #aa44aa44;border-top:2px solid #aa44cc;padding:12px"><div style="font-family:'Cinzel',serif;color:#cc88ff;font-size:.85rem;margin-bottom:6px">🌀 暗影暈眩</div><div style="color:#6888a0;font-size:.8rem;line-height:1.8">範圍：<span style="color:#e8c050">6格內</span>（隱身限定）<br>效果：瞬移貼近目標，造成 <span style="color:#ff4444">2秒暈眩 + 傷害</span></div></div>
+              <div style="background:#040c18;border:1px solid #aa44aa44;border-top:2px solid #aa44cc;padding:12px"><div style="font-family:'Cinzel',serif;color:#cc88ff;font-size:.85rem;margin-bottom:6px">⚡ 黑暗狂暴</div><div style="color:#6888a0;font-size:.8rem;line-height:1.8">雙重機率：<span style="color:#44cc66">+15%</span><br>爆擊機率：<span style="color:#44cc66">+10%</span> ／ 爆擊倍率：<span style="color:#44cc66">+10%</span><br>傷害吸血：<span style="color:#44cc66">10%</span></div></div>
+            </div>
+          </div>
+          <!-- 龍騎士 -->
+          <div class="pnl" style="margin-bottom:0">
+            <div class="pnl-h" style="background:linear-gradient(90deg,#1a0800,#0e0400)"><h2>🐉 龍騎士金技</h2></div>
+            <div class="pnl-b" style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
+              <div style="background:#040c18;border:1px solid #cc440044;border-top:2px solid #cc6600;padding:12px"><div style="font-family:'Cinzel',serif;color:#ffaa44;font-size:.85rem;margin-bottom:6px">🩸 龍血逆流</div><div style="color:#6888a0;font-size:.8rem;line-height:1.8">效果：<span style="color:#44cc66">物理傷害吸血</span><br>HP 低於 <span style="color:#ff4444">30%</span> 時，吸血量 <span style="color:#e8c050">翻倍</span></div></div>
+              <div style="background:#040c18;border:1px solid #cc440044;border-top:2px solid #cc6600;padding:12px"><div style="font-family:'Cinzel',serif;color:#ffaa44;font-size:.85rem;margin-bottom:6px">🔗 龍之牽引</div><div style="color:#6888a0;font-size:.8rem;line-height:1.8">範圍：<span style="color:#e8c050">5格內</span><br>拉至前1格，綁腳 <span style="color:#ffcc44">4秒</span><br>疊加 <span style="color:#ff4444">三層弱點曝光</span><br>冷卻：<span style="color:#ffcc44">12秒</span></div></div>
+            </div>
+          </div>
+          <!-- 騎士 -->
+          <div class="pnl" style="margin-bottom:0">
+            <div class="pnl-h" style="background:linear-gradient(90deg,#001a2a,#000e18)"><h2>⚔️ 騎士金技</h2></div>
+            <div class="pnl-b" style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
+              <div style="background:#040c18;border:1px solid #4488cc44;border-top:2px solid #4488cc;padding:12px"><div style="font-family:'Cinzel',serif;color:#88ccff;font-size:.85rem;margin-bottom:6px">💫 暈眩之劍</div><div style="color:#6888a0;font-size:.8rem;line-height:1.8">範圍：<span style="color:#e8c050">6格遠距離暈眩</span><br>傷害：<span style="color:#e8c050">120魔法+武器傷害</span><br>暈眩：<span style="color:#ff4444">2~4秒</span><br>命中：高70% ／ 同50% ／ 低40%</div></div>
+              <div style="background:#040c18;border:1px solid #4488cc44;border-top:2px solid #4488cc;padding:12px"><div style="font-family:'Cinzel',serif;color:#88ccff;font-size:.85rem;margin-bottom:6px">⚡ 戰神附體</div><div style="color:#6888a0;font-size:.8rem;line-height:1.8">持續時間：<span style="color:#e8c050">30秒</span><br>最大HP轉傷：<span style="color:#44cc66">10%</span><br>暴擊機率：<span style="color:#44cc66">+20%</span><br>暴擊傷害：<span style="color:#e8c050">×1.5倍</span></div></div>
+              <div style="background:#040c18;border:1px solid #cc330044;border-top:2px solid #cc3300;padding:12px"><div style="font-family:'Cinzel',serif;color:#ff8866;font-size:.85rem;margin-bottom:6px">🩸 血祭戰魂</div><div style="color:#6888a0;font-size:.8rem;line-height:1.8">傷害倍率：<span style="color:#e8c050">×1.3</span><br>承受傷害：<span style="color:#ff4444">×1.3</span><br>暴擊機率：<span style="color:#44cc66">+10%</span><br>暴擊傷害：<span style="color:#e8c050">×1.1倍</span></div></div>
+            </div>
+          </div>
+          <!-- 幻術師 -->
+          <div class="pnl" style="margin-bottom:0">
+            <div class="pnl-h" style="background:linear-gradient(90deg,#1a0a00,#0e0600)"><h2>✨ 幻術師金技</h2></div>
+            <div class="pnl-b" style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
+              <div style="background:#040c18;border:1px solid #cc880044;border-top:2px solid #cc8800;padding:12px"><div style="font-family:'Cinzel',serif;color:#ffcc66;font-size:.85rem;margin-bottom:6px">🔗 心靈鎖鏈</div><div style="color:#6888a0;font-size:.8rem;line-height:1.8">持續時間：<span style="color:#e8c050">15秒</span> ／ 範圍：<span style="color:#e8c050">6格內</span><br>連結兩名敵人，其中一名所受傷害的<br><span style="color:#ff4444">50%</span> 反彈至另一名敵人</div></div>
+              <div style="background:#040c18;border:1px solid #cc880044;border-top:2px solid #cc8800;padding:12px"><div style="font-family:'Cinzel',serif;color:#ffcc66;font-size:.85rem;margin-bottom:6px">👁️ 原罪解放</div><div style="color:#6888a0;font-size:.8rem;line-height:1.8">持續時間：<span style="color:#e8c050">60秒</span><br>傷害提升：<span style="color:#e8c050">+25%</span><br>暴擊機率：<span style="color:#44cc66">+20%</span><br>暴擊傷害：<span style="color:#e8c050">×1.5倍</span><br>承受傷害：<span style="color:#ff4444">+10%</span></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+</div>
+
+<!-- Modal -->
+<div class="modal-bg" id="cardModal" onclick="closeModal(event)">
+  <div class="modal" id="modalBox">
+    <button class="modal-close" onclick="document.getElementById('cardModal').classList.remove('open')">✕</button>
+    <img class="modal-img" id="modalImg" src="" alt="">
+    <div class="modal-body">
+      <div class="modal-top">
+        <span class="bc-rare legendary">傳說</span>
+        <div>
+          <div class="modal-name" id="modalName"></div>
+          <div class="modal-en" id="modalEn"></div>
+        </div>
+      </div>
+      <div class="modal-divider"></div>
+      <div class="modal-section">
+        <div class="modal-section-title">⚡ 特殊能力</div>
+        <div class="modal-ability" id="modalAbility"></div>
+      </div>
+      <div class="modal-section">
+        <div class="modal-section-title">📊 基礎屬性</div>
+        <div class="modal-stats" id="modalStats"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="flogo">⚜ 七原罪天堂 · Lineage · 一個會進化的全新世界 ⚜</div>
+  <div>玩家社群：<a href="https://reurl.cc/gn9Z94" target="_blank" style="color:#2a3e50">https://reurl.cc/gn9Z94</a> &nbsp;|&nbsp; 官方LINE：<a href="https://line.me/ti/p/~@263nnjlu" target="_blank" style="color:#2a3e50">@263nnjlu</a></div>
+  <div style="margin-top:3px">本站為非官方私人伺服器，與 NCsoft 及官方天堂無任何關聯。</div>
+  <div style="margin-top:3px">Copyright © 2025 七原罪天堂 All Rights Reserved.</div>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>
